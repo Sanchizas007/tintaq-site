@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tintaq — zgody na tatuaż, które zostają w twoim telefonie</title>
+  <meta name="description" content="Cyfrowe formularze zgody, ankiety zdrowotne i podpisy dla studiów tatuażu i piercingu. Jeden PDF na klienta, z numerami partii tuszu i igieł. Bez konta, bez chmury, działa offline.">
+  <meta name="keywords" content="aplikacja zgoda na tatuaż, formularz zgody piercing, program dla studia tatuażu, karta klienta tatuaż, świadoma zgoda tatuaż">
+  <link rel="canonical" href="https://sanchizas007.github.io/tintaq-site/pl/">
+  <link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/tintaq-site/">
+  <link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/tintaq-site/de/">
+  <link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/tintaq-site/es/">
+  <link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/tintaq-site/it/">
+  <link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/tintaq-site/pl/">
+  <link rel="alternate" hreflang="x-default" href="https://sanchizas007.github.io/tintaq-site/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Tintaq">
+  <meta property="og:title" content="Tintaq — zgody na tatuaż, które zostają w twoim telefonie">
+  <meta property="og:description" content="Cyfrowe formularze zgody, ankiety zdrowotne i podpisy dla studiów tatuażu i piercingu. Jeden PDF na klienta, z numerami partii tuszu i igieł. Bez konta, bez chmury, działa offline.">
+  <meta property="og:url" content="https://sanchizas007.github.io/tintaq-site/pl/">
+  <meta property="og:locale" content="pl_PL">
+  <meta property="og:image" content="https://sanchizas007.github.io/tintaq-site/icon.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Tintaq — zgody na tatuaż, które zostają w twoim telefonie">
+  <meta name="twitter:description" content="Cyfrowe formularze zgody, ankiety zdrowotne i podpisy dla studiów tatuażu i piercingu. Jeden PDF na klienta, z numerami partii tuszu i igieł. Bez konta, bez chmury, działa offline.">
+  <meta name="twitter:image" content="https://sanchizas007.github.io/tintaq-site/icon.png">
+  <link rel="icon" href="https://sanchizas007.github.io/tintaq-site/icon.png">
+  <style>
+:root{color-scheme:light dark;
+ --bg:#f6f3ef;--card:#fff;--line:#e2dcd3;--txt:#17150f;--mut:#6f6960;--acc:#8a6132;--acc-bg:#f0e5d5}
+@media(prefers-color-scheme:dark){:root{
+ --bg:#101012;--card:#1b1b1e;--line:#2e2e34;--txt:#f3f1ee;--mut:#918d88;--acc:#d8b892;--acc-bg:#241f18}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--txt);
+ font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px}
+header{padding:22px 0;border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.brand{font-weight:700;font-size:19px;letter-spacing:-.2px;text-decoration:none;color:var(--txt)}
+.langs{margin-left:auto;display:flex;gap:10px;flex-wrap:wrap}
+.langs a{font-size:13px;color:var(--mut);text-decoration:none}
+.langs a[aria-current]{color:var(--acc);font-weight:600}
+.langs a:hover{color:var(--txt)}
+h1{font-size:clamp(28px,5vw,40px);line-height:1.15;letter-spacing:-.8px;margin:34px 0 12px}
+h2{font-size:22px;letter-spacing:-.3px;margin:34px 0 10px}
+h3{font-size:17px;margin:22px 0 6px}
+.kicker{color:var(--acc);font-size:13px;font-weight:600;letter-spacing:.8px;text-transform:uppercase;
+ margin-top:34px}
+.lead{font-size:18px;color:var(--mut);max-width:62ch}
+p{max-width:68ch}
+.cta{display:inline-block;margin:22px 0 6px;padding:13px 22px;border-radius:12px;
+ background:var(--acc);color:var(--bg);text-decoration:none;font-weight:600}
+.cta.soon{background:transparent;color:var(--acc);border:1px solid var(--acc)}
+ul{padding-left:20px}
+li{margin:5px 0;max-width:66ch}
+ol{padding-left:22px}
+.cards{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+.card h3{margin:0 0 5px;font-size:16px}
+.card p{margin:0;font-size:14.5px;color:var(--mut)}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:13px 15px;margin:8px 0}
+details summary{cursor:pointer;font-weight:600}
+details p{margin:9px 0 0;color:var(--mut);font-size:15px}
+.note{background:var(--acc-bg);border:1px solid var(--line);border-radius:12px;padding:14px;
+ font-size:14.5px;color:var(--txt)}
+footer{margin-top:52px;border-top:1px solid var(--line);padding:22px 0 40px;color:var(--mut);font-size:14px}
+footer a{color:var(--acc);text-decoration:none;margin-right:14px}
+.updated{font-size:13px;color:var(--mut);margin-top:26px}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Tintaq", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS 17.0 or later", "description": "Cyfrowe formularze zgody, ankiety zdrowotne i podpisy dla studiów tatuażu i piercingu. Jeden PDF na klienta, z numerami partii tuszu i igieł. Bez konta, bez chmury, działa offline.", "inLanguage": ["en", "de", "es", "it", "pl"], "offers": [{"@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "Five clients free"}, {"@type": "Offer", "price": "59.99", "priceCurrency": "USD", "description": "Tintaq Pro, one-time purchase"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Gdzie są dane moich klientów?", "acceptedAnswer": {"@type": "Answer", "text": "Na urządzeniu, w kontenerze aplikacji, zaszyfrowane przez iOS i za Face ID. Nic nie jest wysyłane — Tintaq nie ma serwera ani konta."}}, {"@type": "Question", "name": "A jeśli zgubię telefon?", "acceptedAnswer": {"@type": "Answer", "text": "Wszystko jest tylko lokalnie, więc zgubiony telefon to zgubione archiwum. Tintaq zapisuje zaszyfrowany plik kopii, który trzymasz w Plikach lub iCloud Drive. Rób to regularnie."}}, {"@type": "Question", "name": "Czy podpis palcem jest ważny prawnie?", "acceptedAnswer": {"@type": "Answer", "text": "W większości miejsc podpis elektroniczny jest ważny, jeśli możesz wykazać, kto podpisał, co przeczytał i kiedy. Wszystkie trzy rzeczy są w PDF. Czy to wystarczy w twoich przepisach, powie prawnik w twoim kraju."}}, {"@type": "Question", "name": "Czy szablony są zatwierdzone prawnie?", "acceptedAnswer": {"@type": "Answer", "text": "Nie. To dobrze napisany punkt wyjścia, a nie porada prawna. Kto twierdzi, że aplikacja daje dokument zgodny z prawem każdego kraju, coś ci sprzedaje. Przeczytaj szablon, zmień go i sprawdź u siebie."}}, {"@type": "Question", "name": "Czy może podpisać osoba poniżej 18 lat?", "acceptedAnswer": {"@type": "Answer", "text": "Tintaq liczy wiek z daty urodzenia i poniżej 18 lat włącza podpis opiekuna. To, czy w ogóle wolno ją tatuować, zależy od kraju i regionu."}}, {"@type": "Question", "name": "Czy muszę przechowywać zdjęcie dokumentu?", "acceptedAnswer": {"@type": "Answer", "text": "Nie. Możesz zapisać, że dokument sprawdzono, z jego rodzajem i ostatnimi cyframi, bez żadnego zdjęcia."}}, {"@type": "Question", "name": "Czy działa na iPadzie?", "acceptedAnswer": {"@type": "Answer", "text": "Tak. Wiele studiów daje do podpisu iPada, a aplikacja jest zrobiona pod oba urządzenia."}}]}</script>
+</head>
+<body>
+<header><div class="wrap">
+  <a class="brand" href="https://sanchizas007.github.io/tintaq-site/pl/">Tintaq</a>
+  <nav class="langs"><a href="https://sanchizas007.github.io/tintaq-site/">English</a><a href="https://sanchizas007.github.io/tintaq-site/de/">Deutsch</a><a href="https://sanchizas007.github.io/tintaq-site/es/">Español</a><a href="https://sanchizas007.github.io/tintaq-site/it/">Italiano</a><a href="https://sanchizas007.github.io/tintaq-site/pl/" aria-current="true">Polski</a></nav>
+</div></header>
+<main class="wrap">
+
+  <p class="kicker">Dla studiów tatuażu i piercingu</p>
+  <h1>Zgody, które nigdy nie opuszczają telefonu</h1>
+  <p class="lead">Klient odpowiada na pytania o zdrowie, pokazuje dokument i podpisuje się palcem. Tintaq robi z tego jeden PDF — dokument, o który pyta kontrola, i kopię, którą klient zabiera do domu.</p>
+  <span class="cta soon">Wkrótce w App Store</span>
+
+  <h2>Czym się różni</h2>
+  <div class="cards"><div class="card"><h3>Nic nie jest wysyłane</h3><p>Odpowiedzi o zdrowiu i zdjęcia dokumentów zostają w aplikacji, zaszyfrowane przez iOS, za Face ID. Nie ma konta do założenia ani serwera, któremu trzeba ufać. Działa bez zasięgu.</p></div><div class="card"><h3>Treść zostaje utrwalona przy podpisie</h3><p>Zgoda jest coś warta tylko wtedy, gdy możesz pokazać, co klient przeczytał. Późniejsza edycja szablonu podnosi jego wersję i nie rusza podpisanych formularzy.</p></div><div class="card"><h3>Bezpiecznie podaj telefon</h3><p>Tryb klienta ukrywa kartoteki wszystkich innych i prosi o Face ID, zanim ktokolwiek wyjdzie z formularza.</p></div><div class="card"><h3>Numery partii na dokumencie</h3><p>Partie tuszu i igieł trafiają na PDF, bo to pierwsza rzecz, o którą pyta kontrola sanitarna.</p></div><div class="card"><h3>Pięć języków</h3><p>Polski, angielski, niemiecki, hiszpański i włoski — aplikacja, szablony i zalecenia po zabiegu.</p></div><div class="card"><h3>Twoja treść, twoje logo</h3><p>Szablony to punkt wyjścia. Przepisz je pod swój kraj i swoje studio, a logo umieść w nagłówku.</p></div></div>
+
+  <h2>Jak wygląda sesja</h2>
+  <ol><li>Wybierz klienta albo dodaj go w dwadzieścia sekund.</li><li>Wybierz formularz: tatuaż, piercing, poprawka albo własny.</li><li>Zapisz zabieg, miejsce na sylwetce i otwarte partie.</li><li>Podaj telefon. Klient odpowiada, pokazuje dokument, czyta treść i podpisuje.</li><li>Face ID oddaje ci telefon. Sprawdź oznaczone odpowiedzi, zapisz — PDF gotowy.</li></ol>
+
+  <h2>Cena</h2>
+  <p>Pięciu klientów za darmo, żeby sprawdzić na żywych ludziach. Potem: jedna płatność 59,99 $ i jest twoje, albo 29,99 $ rocznie, albo 4,99 $ miesięcznie. Bez opłat za formularz.</p>
+
+  <h2>O co pytają studia</h2>
+  <details><summary>Gdzie są dane moich klientów?</summary><p>Na urządzeniu, w kontenerze aplikacji, zaszyfrowane przez iOS i za Face ID. Nic nie jest wysyłane — Tintaq nie ma serwera ani konta.</p></details><details><summary>A jeśli zgubię telefon?</summary><p>Wszystko jest tylko lokalnie, więc zgubiony telefon to zgubione archiwum. Tintaq zapisuje zaszyfrowany plik kopii, który trzymasz w Plikach lub iCloud Drive. Rób to regularnie.</p></details><details><summary>Czy podpis palcem jest ważny prawnie?</summary><p>W większości miejsc podpis elektroniczny jest ważny, jeśli możesz wykazać, kto podpisał, co przeczytał i kiedy. Wszystkie trzy rzeczy są w PDF. Czy to wystarczy w twoich przepisach, powie prawnik w twoim kraju.</p></details><details><summary>Czy szablony są zatwierdzone prawnie?</summary><p>Nie. To dobrze napisany punkt wyjścia, a nie porada prawna. Kto twierdzi, że aplikacja daje dokument zgodny z prawem każdego kraju, coś ci sprzedaje. Przeczytaj szablon, zmień go i sprawdź u siebie.</p></details><details><summary>Czy może podpisać osoba poniżej 18 lat?</summary><p>Tintaq liczy wiek z daty urodzenia i poniżej 18 lat włącza podpis opiekuna. To, czy w ogóle wolno ją tatuować, zależy od kraju i regionu.</p></details><details><summary>Czy muszę przechowywać zdjęcie dokumentu?</summary><p>Nie. Możesz zapisać, że dokument sprawdzono, z jego rodzajem i ostatnimi cyframi, bez żadnego zdjęcia.</p></details><details><summary>Czy działa na iPadzie?</summary><p>Tak. Wiele studiów daje do podpisu iPada, a aplikacja jest zrobiona pod oba urządzenia.</p></details>
+
+</main>
+<footer><div class="wrap">
+  <a href="https://sanchizas007.github.io/tintaq-site/pl/privacy/">Prywatność</a>
+  <a href="https://sanchizas007.github.io/tintaq-site/pl/terms/">Warunki</a>
+  <a href="https://sanchizas007.github.io/tintaq-site/pl/support/">Pomoc</a>
+  <p style="margin-top:12px">Tintaq daje dokument, a nie poradę prawną.</p>
+</div></footer>
+</body>
+</html>

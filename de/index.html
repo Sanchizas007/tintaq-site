@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tintaq — Tattoo-Einwilligungen, die auf deinem Telefon bleiben</title>
+  <meta name="description" content="Digitale Einwilligungen, Gesundheitsfragebögen und Unterschriften für Tattoo- und Piercing-Studios. Ein PDF pro Kunde, mit Chargennummern von Farbe und Nadeln. Kein Konto, keine Cloud, offline nutzbar.">
+  <meta name="keywords" content="tattoo einverständniserklärung app, piercing einwilligung, tattoo studio software, digitale einwilligung tattoo, kundenakte tattoo, tattoo haftungsausschluss">
+  <link rel="canonical" href="https://sanchizas007.github.io/tintaq-site/de/">
+  <link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/tintaq-site/">
+  <link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/tintaq-site/de/">
+  <link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/tintaq-site/es/">
+  <link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/tintaq-site/it/">
+  <link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/tintaq-site/pl/">
+  <link rel="alternate" hreflang="x-default" href="https://sanchizas007.github.io/tintaq-site/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Tintaq">
+  <meta property="og:title" content="Tintaq — Tattoo-Einwilligungen, die auf deinem Telefon bleiben">
+  <meta property="og:description" content="Digitale Einwilligungen, Gesundheitsfragebögen und Unterschriften für Tattoo- und Piercing-Studios. Ein PDF pro Kunde, mit Chargennummern von Farbe und Nadeln. Kein Konto, keine Cloud, offline nutzbar.">
+  <meta property="og:url" content="https://sanchizas007.github.io/tintaq-site/de/">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:image" content="https://sanchizas007.github.io/tintaq-site/icon.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Tintaq — Tattoo-Einwilligungen, die auf deinem Telefon bleiben">
+  <meta name="twitter:description" content="Digitale Einwilligungen, Gesundheitsfragebögen und Unterschriften für Tattoo- und Piercing-Studios. Ein PDF pro Kunde, mit Chargennummern von Farbe und Nadeln. Kein Konto, keine Cloud, offline nutzbar.">
+  <meta name="twitter:image" content="https://sanchizas007.github.io/tintaq-site/icon.png">
+  <link rel="icon" href="https://sanchizas007.github.io/tintaq-site/icon.png">
+  <style>
+:root{color-scheme:light dark;
+ --bg:#f6f3ef;--card:#fff;--line:#e2dcd3;--txt:#17150f;--mut:#6f6960;--acc:#8a6132;--acc-bg:#f0e5d5}
+@media(prefers-color-scheme:dark){:root{
+ --bg:#101012;--card:#1b1b1e;--line:#2e2e34;--txt:#f3f1ee;--mut:#918d88;--acc:#d8b892;--acc-bg:#241f18}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--txt);
+ font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px}
+header{padding:22px 0;border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.brand{font-weight:700;font-size:19px;letter-spacing:-.2px;text-decoration:none;color:var(--txt)}
+.langs{margin-left:auto;display:flex;gap:10px;flex-wrap:wrap}
+.langs a{font-size:13px;color:var(--mut);text-decoration:none}
+.langs a[aria-current]{color:var(--acc);font-weight:600}
+.langs a:hover{color:var(--txt)}
+h1{font-size:clamp(28px,5vw,40px);line-height:1.15;letter-spacing:-.8px;margin:34px 0 12px}
+h2{font-size:22px;letter-spacing:-.3px;margin:34px 0 10px}
+h3{font-size:17px;margin:22px 0 6px}
+.kicker{color:var(--acc);font-size:13px;font-weight:600;letter-spacing:.8px;text-transform:uppercase;
+ margin-top:34px}
+.lead{font-size:18px;color:var(--mut);max-width:62ch}
+p{max-width:68ch}
+.cta{display:inline-block;margin:22px 0 6px;padding:13px 22px;border-radius:12px;
+ background:var(--acc);color:var(--bg);text-decoration:none;font-weight:600}
+.cta.soon{background:transparent;color:var(--acc);border:1px solid var(--acc)}
+ul{padding-left:20px}
+li{margin:5px 0;max-width:66ch}
+ol{padding-left:22px}
+.cards{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+.card h3{margin:0 0 5px;font-size:16px}
+.card p{margin:0;font-size:14.5px;color:var(--mut)}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:13px 15px;margin:8px 0}
+details summary{cursor:pointer;font-weight:600}
+details p{margin:9px 0 0;color:var(--mut);font-size:15px}
+.note{background:var(--acc-bg);border:1px solid var(--line);border-radius:12px;padding:14px;
+ font-size:14.5px;color:var(--txt)}
+footer{margin-top:52px;border-top:1px solid var(--line);padding:22px 0 40px;color:var(--mut);font-size:14px}
+footer a{color:var(--acc);text-decoration:none;margin-right:14px}
+.updated{font-size:13px;color:var(--mut);margin-top:26px}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Tintaq", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS 17.0 or later", "description": "Digitale Einwilligungen, Gesundheitsfragebögen und Unterschriften für Tattoo- und Piercing-Studios. Ein PDF pro Kunde, mit Chargennummern von Farbe und Nadeln. Kein Konto, keine Cloud, offline nutzbar.", "inLanguage": ["en", "de", "es", "it", "pl"], "offers": [{"@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "Five clients free"}, {"@type": "Offer", "price": "59.99", "priceCurrency": "USD", "description": "Tintaq Pro, one-time purchase"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Wo liegen die Daten meiner Kunden?", "acceptedAnswer": {"@type": "Answer", "text": "Auf dem Gerät, im eigenen Container der App, von iOS verschlüsselt und hinter Face ID. Es wird nichts verschickt — Tintaq hat weder Server noch Konto."}}, {"@type": "Question", "name": "Was, wenn ich das Telefon verliere?", "acceptedAnswer": {"@type": "Answer", "text": "Alles liegt lokal, ein verlorenes Telefon ist also ein verlorenes Archiv. Tintaq schreibt dir eine verschlüsselte Sicherungsdatei für Dateien oder iCloud Drive. Mach das regelmäßig."}}, {"@type": "Question", "name": "Ist eine Unterschrift mit dem Finger rechtsgültig?", "acceptedAnswer": {"@type": "Answer", "text": "Meist ist eine elektronische Unterschrift gültig, wenn du zeigen kannst, wer unterschrieben hat, was diese Person gelesen hat und wann. Alle drei stehen im PDF. Ob das deinen örtlichen Vorschriften genügt, beantwortet eine Anwältin in deinem Land."}}, {"@type": "Question", "name": "Sind die Vorlagen juristisch geprüft?", "acceptedAnswer": {"@type": "Answer", "text": "Nein. Sie sind ein sauber geschriebener Ausgangspunkt, keine Rechtsberatung. Wer behauptet, eine App liefere ein für jedes Land rechtssicheres Dokument, verkauft dir etwas. Lies die Vorlage, ändere sie, und lass sie vor Ort prüfen."}}, {"@type": "Question", "name": "Darf jemand unter 18 unterschreiben?", "acceptedAnswer": {"@type": "Answer", "text": "Tintaq rechnet das Alter aus dem Geburtsdatum aus und schaltet unter 18 die Unterschrift der erziehungsberechtigten Person frei. Ob du überhaupt tätowieren darfst, hängt von Land und Bundesland ab."}}, {"@type": "Question", "name": "Muss ich ein Ausweisfoto speichern?", "acceptedAnswer": {"@type": "Answer", "text": "Nein. Du kannst festhalten, dass das Dokument geprüft wurde, mit Art und letzten Ziffern, und gar kein Bild speichern — die schlanke Variante, wo ein Scan nicht erlaubt ist."}}, {"@type": "Question", "name": "Läuft es auf dem iPad?", "acceptedAnswer": {"@type": "Answer", "text": "Ja. Viele Studios lassen auf dem iPad unterschreiben, die App ist für beides gebaut."}}]}</script>
+</head>
+<body>
+<header><div class="wrap">
+  <a class="brand" href="https://sanchizas007.github.io/tintaq-site/de/">Tintaq</a>
+  <nav class="langs"><a href="https://sanchizas007.github.io/tintaq-site/">English</a><a href="https://sanchizas007.github.io/tintaq-site/de/" aria-current="true">Deutsch</a><a href="https://sanchizas007.github.io/tintaq-site/es/">Español</a><a href="https://sanchizas007.github.io/tintaq-site/it/">Italiano</a><a href="https://sanchizas007.github.io/tintaq-site/pl/">Polski</a></nav>
+</div></header>
+<main class="wrap">
+
+  <p class="kicker">Für Tattoo- und Piercing-Studios</p>
+  <h1>Einwilligungen, die dein Telefon nie verlassen</h1>
+  <p class="lead">Die Kundin beantwortet die Gesundheitsfragen, zeigt den Ausweis und unterschreibt mit dem Finger. Tintaq macht daraus ein PDF — das Dokument für die Aufsicht und die Kopie, die die Kundin mitnimmt.</p>
+  <span class="cta soon">Bald im App Store</span>
+
+  <h2>Was den Unterschied macht</h2>
+  <div class="cards"><div class="card"><h3>Nichts wird hochgeladen</h3><p>Gesundheitsangaben und Ausweisfotos bleiben in der App, von iOS verschlüsselt, hinter Face ID. Kein Konto, kein Server, dem man vertrauen muss. Funktioniert ohne Netz.</p></div><div class="card"><h3>Der Wortlaut wird beim Unterschreiben eingefroren</h3><p>Eine Einwilligung ist nur etwas wert, wenn du zeigen kannst, was die Person gelesen hat. Eine spätere Änderung der Vorlage erhöht deren Version und rührt unterschriebene Formulare nicht an.</p></div><div class="card"><h3>Das Gerät sicher weiterreichen</h3><p>Der Kundenmodus blendet alle anderen Akten aus und verlangt Face ID, bevor jemand das Formular verlassen kann.</p></div><div class="card"><h3>Chargennummern auf dem Dokument</h3><p>Farb- und Nadelchargen stehen auf dem PDF — das fragt die Gesundheitsaufsicht als Erstes.</p></div><div class="card"><h3>Fünf Sprachen</h3><p>Deutsch, Englisch, Spanisch, Italienisch und Polnisch — App, Vorlagen und Nachsorgeblatt.</p></div><div class="card"><h3>Dein Wortlaut, dein Logo</h3><p>Die Vorlagen sind ein Ausgangspunkt. Schreib sie für dein Land und dein Studio um und setz dein Logo in den Kopf.</p></div></div>
+
+  <h2>So läuft ein Termin</h2>
+  <ol><li>Kundin auswählen oder in zwanzig Sekunden anlegen.</li><li>Formular wählen: Tattoo, Piercing, Nachstechen oder ein eigenes.</li><li>Prozedur, Stelle auf der Körperkarte und geöffnete Chargen festhalten.</li><li>Gerät weiterreichen. Die Kundin beantwortet die Gesundheitsfragen, zeigt den Ausweis, liest den Text und unterschreibt.</li><li>Face ID gibt dir das Gerät zurück. Auffällige Antworten prüfen, sichern, PDF fertig.</li></ol>
+
+  <h2>Preis</h2>
+  <p>Fünf Kunden gratis, damit du es an echten Menschen ausprobieren kannst. Danach: einmalig 59,99 $ und es gehört dir, oder 29,99 $ im Jahr, oder 4,99 $ im Monat. Keine Gebühr pro Formular.</p>
+
+  <h2>Was Studios fragen</h2>
+  <details><summary>Wo liegen die Daten meiner Kunden?</summary><p>Auf dem Gerät, im eigenen Container der App, von iOS verschlüsselt und hinter Face ID. Es wird nichts verschickt — Tintaq hat weder Server noch Konto.</p></details><details><summary>Was, wenn ich das Telefon verliere?</summary><p>Alles liegt lokal, ein verlorenes Telefon ist also ein verlorenes Archiv. Tintaq schreibt dir eine verschlüsselte Sicherungsdatei für Dateien oder iCloud Drive. Mach das regelmäßig.</p></details><details><summary>Ist eine Unterschrift mit dem Finger rechtsgültig?</summary><p>Meist ist eine elektronische Unterschrift gültig, wenn du zeigen kannst, wer unterschrieben hat, was diese Person gelesen hat und wann. Alle drei stehen im PDF. Ob das deinen örtlichen Vorschriften genügt, beantwortet eine Anwältin in deinem Land.</p></details><details><summary>Sind die Vorlagen juristisch geprüft?</summary><p>Nein. Sie sind ein sauber geschriebener Ausgangspunkt, keine Rechtsberatung. Wer behauptet, eine App liefere ein für jedes Land rechtssicheres Dokument, verkauft dir etwas. Lies die Vorlage, ändere sie, und lass sie vor Ort prüfen.</p></details><details><summary>Darf jemand unter 18 unterschreiben?</summary><p>Tintaq rechnet das Alter aus dem Geburtsdatum aus und schaltet unter 18 die Unterschrift der erziehungsberechtigten Person frei. Ob du überhaupt tätowieren darfst, hängt von Land und Bundesland ab.</p></details><details><summary>Muss ich ein Ausweisfoto speichern?</summary><p>Nein. Du kannst festhalten, dass das Dokument geprüft wurde, mit Art und letzten Ziffern, und gar kein Bild speichern — die schlanke Variante, wo ein Scan nicht erlaubt ist.</p></details><details><summary>Läuft es auf dem iPad?</summary><p>Ja. Viele Studios lassen auf dem iPad unterschreiben, die App ist für beides gebaut.</p></details>
+
+</main>
+<footer><div class="wrap">
+  <a href="https://sanchizas007.github.io/tintaq-site/de/privacy/">Datenschutz</a>
+  <a href="https://sanchizas007.github.io/tintaq-site/de/terms/">Nutzungsbedingungen</a>
+  <a href="https://sanchizas007.github.io/tintaq-site/de/support/">Hilfe</a>
+  <p style="margin-top:12px">Tintaq liefert ein Dokument, keine Rechtsberatung.</p>
+</div></footer>
+</body>
+</html>
