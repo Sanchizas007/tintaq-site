@@ -7,9 +7,18 @@
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/tintaq-site/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/tintaq-site/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/tintaq-site/fr/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/tintaq-site/es/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/tintaq-site/it/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/tintaq-site/pt-BR/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/tintaq-site/nl/"/>
     <xhtml:link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/tintaq-site/pl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/tintaq-site/ru/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/tintaq-site/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/tintaq-site/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/tintaq-site/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/tintaq-site/zh-Hans/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/tintaq-site/zh-Hant/"/>
   </url>
   <url>
     <loc>https://sanchizas007.github.io/tintaq-site/privacy/</loc>
@@ -17,9 +26,18 @@
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/tintaq-site/privacy/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/tintaq-site/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/tintaq-site/fr/privacy/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/tintaq-site/es/privacy/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/tintaq-site/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/tintaq-site/pt-BR/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/tintaq-site/nl/privacy/"/>
     <xhtml:link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/tintaq-site/pl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/tintaq-site/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/tintaq-site/tr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/tintaq-site/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/tintaq-site/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/tintaq-site/zh-Hans/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/tintaq-site/zh-Hant/privacy/"/>
   </url>
   <url>
     <loc>https://sanchizas007.github.io/tintaq-site/terms/</loc>
@@ -27,9 +45,18 @@
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/tintaq-site/terms/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/tintaq-site/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/tintaq-site/fr/terms/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/tintaq-site/es/terms/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/tintaq-site/it/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/tintaq-site/pt-BR/terms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/tintaq-site/nl/terms/"/>
     <xhtml:link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/tintaq-site/pl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/tintaq-site/ru/terms/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/tintaq-site/tr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/tintaq-site/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/tintaq-site/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/tintaq-site/zh-Hans/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/tintaq-site/zh-Hant/terms/"/>
   </url>
   <url>
     <loc>https://sanchizas007.github.io/tintaq-site/support/</loc>
@@ -37,9 +64,18 @@
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/tintaq-site/support/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/tintaq-site/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/tintaq-site/fr/support/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/tintaq-site/es/support/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/tintaq-site/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/tintaq-site/pt-BR/support/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/tintaq-site/nl/support/"/>
     <xhtml:link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/tintaq-site/pl/support/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/tintaq-site/ru/support/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/tintaq-site/tr/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/tintaq-site/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/tintaq-site/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/tintaq-site/zh-Hans/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/tintaq-site/zh-Hant/support/"/>
   </url>
   <url>
     <loc>https://sanchizas007.github.io/tintaq-site/de/</loc>
@@ -47,9 +83,18 @@
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/tintaq-site/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/tintaq-site/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/tintaq-site/fr/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/tintaq-site/es/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/tintaq-site/it/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/tintaq-site/pt-BR/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/tintaq-site/nl/"/>
     <xhtml:link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/tintaq-site/pl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/tintaq-site/ru/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/tintaq-site/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/tintaq-site/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/tintaq-site/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/tintaq-site/zh-Hans/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/tintaq-site/zh-Hant/"/>
   </url>
   <url>
     <loc>https://sanchizas007.github.io/tintaq-site/de/privacy/</loc>
@@ -57,9 +102,18 @@
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/tintaq-site/privacy/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/tintaq-site/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/tintaq-site/fr/privacy/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/tintaq-site/es/privacy/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/tintaq-site/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/tintaq-site/pt-BR/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/tintaq-site/nl/privacy/"/>
     <xhtml:link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/tintaq-site/pl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/tintaq-site/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/tintaq-site/tr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/tintaq-site/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/tintaq-site/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/tintaq-site/zh-Hans/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/tintaq-site/zh-Hant/privacy/"/>
   </url>
   <url>
     <loc>https://sanchizas007.github.io/tintaq-site/de/terms/</loc>
@@ -67,9 +121,18 @@
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/tintaq-site/terms/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/tintaq-site/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/tintaq-site/fr/terms/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/tintaq-site/es/terms/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/tintaq-site/it/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/tintaq-site/pt-BR/terms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/tintaq-site/nl/terms/"/>
     <xhtml:link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/tintaq-site/pl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/tintaq-site/ru/terms/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/tintaq-site/tr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/tintaq-site/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/tintaq-site/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/tintaq-site/zh-Hans/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/tintaq-site/zh-Hant/terms/"/>
   </url>
   <url>
     <loc>https://sanchizas007.github.io/tintaq-site/de/support/</loc>
@@ -77,9 +140,94 @@
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/tintaq-site/support/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/tintaq-site/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/tintaq-site/fr/support/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/tintaq-site/es/support/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/tintaq-site/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/tintaq-site/pt-BR/support/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/tintaq-site/nl/support/"/>
     <xhtml:link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/tintaq-site/pl/support/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/tintaq-site/ru/support/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/tintaq-site/tr/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/tintaq-site/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/tintaq-site/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/tintaq-site/zh-Hans/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/tintaq-site/zh-Hant/support/"/>
+  </url>
+  <url>
+    <loc>https://sanchizas007.github.io/tintaq-site/fr/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/tintaq-site/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/tintaq-site/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/tintaq-site/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/tintaq-site/es/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/tintaq-site/it/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/tintaq-site/pt-BR/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/tintaq-site/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/tintaq-site/pl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/tintaq-site/ru/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/tintaq-site/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/tintaq-site/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/tintaq-site/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/tintaq-site/zh-Hans/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/tintaq-site/zh-Hant/"/>
+  </url>
+  <url>
+    <loc>https://sanchizas007.github.io/tintaq-site/fr/privacy/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/tintaq-site/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/tintaq-site/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/tintaq-site/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/tintaq-site/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/tintaq-site/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/tintaq-site/pt-BR/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/tintaq-site/nl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/tintaq-site/pl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/tintaq-site/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/tintaq-site/tr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/tintaq-site/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/tintaq-site/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/tintaq-site/zh-Hans/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/tintaq-site/zh-Hant/privacy/"/>
+  </url>
+  <url>
+    <loc>https://sanchizas007.github.io/tintaq-site/fr/terms/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/tintaq-site/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/tintaq-site/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/tintaq-site/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/tintaq-site/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/tintaq-site/it/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/tintaq-site/pt-BR/terms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/tintaq-site/nl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/tintaq-site/pl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/tintaq-site/ru/terms/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/tintaq-site/tr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/tintaq-site/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/tintaq-site/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/tintaq-site/zh-Hans/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/tintaq-site/zh-Hant/terms/"/>
+  </url>
+  <url>
+    <loc>https://sanchizas007.github.io/tintaq-site/fr/support/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/tintaq-site/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/tintaq-site/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/tintaq-site/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/tintaq-site/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/tintaq-site/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/tintaq-site/pt-BR/support/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/tintaq-site/nl/support/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/tintaq-site/pl/support/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/tintaq-site/ru/support/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/tintaq-site/tr/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/tintaq-site/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/tintaq-site/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/tintaq-site/zh-Hans/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/tintaq-site/zh-Hant/support/"/>
   </url>
   <url>
     <loc>https://sanchizas007.github.io/tintaq-site/es/</loc>
@@ -87,9 +235,18 @@
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/tintaq-site/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/tintaq-site/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/tintaq-site/fr/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/tintaq-site/es/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/tintaq-site/it/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/tintaq-site/pt-BR/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/tintaq-site/nl/"/>
     <xhtml:link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/tintaq-site/pl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/tintaq-site/ru/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/tintaq-site/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/tintaq-site/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/tintaq-site/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/tintaq-site/zh-Hans/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/tintaq-site/zh-Hant/"/>
   </url>
   <url>
     <loc>https://sanchizas007.github.io/tintaq-site/es/privacy/</loc>
@@ -97,9 +254,18 @@
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/tintaq-site/privacy/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/tintaq-site/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/tintaq-site/fr/privacy/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/tintaq-site/es/privacy/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/tintaq-site/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/tintaq-site/pt-BR/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/tintaq-site/nl/privacy/"/>
     <xhtml:link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/tintaq-site/pl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/tintaq-site/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/tintaq-site/tr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/tintaq-site/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/tintaq-site/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/tintaq-site/zh-Hans/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/tintaq-site/zh-Hant/privacy/"/>
   </url>
   <url>
     <loc>https://sanchizas007.github.io/tintaq-site/es/terms/</loc>
@@ -107,9 +273,18 @@
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/tintaq-site/terms/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/tintaq-site/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/tintaq-site/fr/terms/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/tintaq-site/es/terms/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/tintaq-site/it/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/tintaq-site/pt-BR/terms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/tintaq-site/nl/terms/"/>
     <xhtml:link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/tintaq-site/pl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/tintaq-site/ru/terms/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/tintaq-site/tr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/tintaq-site/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/tintaq-site/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/tintaq-site/zh-Hans/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/tintaq-site/zh-Hant/terms/"/>
   </url>
   <url>
     <loc>https://sanchizas007.github.io/tintaq-site/es/support/</loc>
@@ -117,9 +292,18 @@
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/tintaq-site/support/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/tintaq-site/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/tintaq-site/fr/support/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/tintaq-site/es/support/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/tintaq-site/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/tintaq-site/pt-BR/support/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/tintaq-site/nl/support/"/>
     <xhtml:link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/tintaq-site/pl/support/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/tintaq-site/ru/support/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/tintaq-site/tr/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/tintaq-site/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/tintaq-site/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/tintaq-site/zh-Hans/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/tintaq-site/zh-Hant/support/"/>
   </url>
   <url>
     <loc>https://sanchizas007.github.io/tintaq-site/it/</loc>
@@ -127,9 +311,18 @@
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/tintaq-site/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/tintaq-site/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/tintaq-site/fr/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/tintaq-site/es/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/tintaq-site/it/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/tintaq-site/pt-BR/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/tintaq-site/nl/"/>
     <xhtml:link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/tintaq-site/pl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/tintaq-site/ru/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/tintaq-site/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/tintaq-site/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/tintaq-site/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/tintaq-site/zh-Hans/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/tintaq-site/zh-Hant/"/>
   </url>
   <url>
     <loc>https://sanchizas007.github.io/tintaq-site/it/privacy/</loc>
@@ -137,9 +330,18 @@
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/tintaq-site/privacy/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/tintaq-site/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/tintaq-site/fr/privacy/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/tintaq-site/es/privacy/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/tintaq-site/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/tintaq-site/pt-BR/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/tintaq-site/nl/privacy/"/>
     <xhtml:link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/tintaq-site/pl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/tintaq-site/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/tintaq-site/tr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/tintaq-site/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/tintaq-site/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/tintaq-site/zh-Hans/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/tintaq-site/zh-Hant/privacy/"/>
   </url>
   <url>
     <loc>https://sanchizas007.github.io/tintaq-site/it/terms/</loc>
@@ -147,9 +349,18 @@
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/tintaq-site/terms/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/tintaq-site/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/tintaq-site/fr/terms/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/tintaq-site/es/terms/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/tintaq-site/it/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/tintaq-site/pt-BR/terms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/tintaq-site/nl/terms/"/>
     <xhtml:link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/tintaq-site/pl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/tintaq-site/ru/terms/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/tintaq-site/tr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/tintaq-site/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/tintaq-site/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/tintaq-site/zh-Hans/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/tintaq-site/zh-Hant/terms/"/>
   </url>
   <url>
     <loc>https://sanchizas007.github.io/tintaq-site/it/support/</loc>
@@ -157,9 +368,170 @@
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/tintaq-site/support/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/tintaq-site/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/tintaq-site/fr/support/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/tintaq-site/es/support/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/tintaq-site/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/tintaq-site/pt-BR/support/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/tintaq-site/nl/support/"/>
     <xhtml:link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/tintaq-site/pl/support/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/tintaq-site/ru/support/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/tintaq-site/tr/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/tintaq-site/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/tintaq-site/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/tintaq-site/zh-Hans/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/tintaq-site/zh-Hant/support/"/>
+  </url>
+  <url>
+    <loc>https://sanchizas007.github.io/tintaq-site/pt-BR/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/tintaq-site/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/tintaq-site/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/tintaq-site/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/tintaq-site/es/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/tintaq-site/it/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/tintaq-site/pt-BR/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/tintaq-site/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/tintaq-site/pl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/tintaq-site/ru/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/tintaq-site/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/tintaq-site/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/tintaq-site/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/tintaq-site/zh-Hans/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/tintaq-site/zh-Hant/"/>
+  </url>
+  <url>
+    <loc>https://sanchizas007.github.io/tintaq-site/pt-BR/privacy/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/tintaq-site/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/tintaq-site/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/tintaq-site/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/tintaq-site/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/tintaq-site/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/tintaq-site/pt-BR/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/tintaq-site/nl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/tintaq-site/pl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/tintaq-site/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/tintaq-site/tr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/tintaq-site/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/tintaq-site/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/tintaq-site/zh-Hans/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/tintaq-site/zh-Hant/privacy/"/>
+  </url>
+  <url>
+    <loc>https://sanchizas007.github.io/tintaq-site/pt-BR/terms/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/tintaq-site/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/tintaq-site/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/tintaq-site/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/tintaq-site/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/tintaq-site/it/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/tintaq-site/pt-BR/terms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/tintaq-site/nl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/tintaq-site/pl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/tintaq-site/ru/terms/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/tintaq-site/tr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/tintaq-site/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/tintaq-site/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/tintaq-site/zh-Hans/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/tintaq-site/zh-Hant/terms/"/>
+  </url>
+  <url>
+    <loc>https://sanchizas007.github.io/tintaq-site/pt-BR/support/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/tintaq-site/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/tintaq-site/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/tintaq-site/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/tintaq-site/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/tintaq-site/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/tintaq-site/pt-BR/support/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/tintaq-site/nl/support/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/tintaq-site/pl/support/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/tintaq-site/ru/support/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/tintaq-site/tr/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/tintaq-site/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/tintaq-site/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/tintaq-site/zh-Hans/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/tintaq-site/zh-Hant/support/"/>
+  </url>
+  <url>
+    <loc>https://sanchizas007.github.io/tintaq-site/nl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/tintaq-site/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/tintaq-site/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/tintaq-site/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/tintaq-site/es/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/tintaq-site/it/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/tintaq-site/pt-BR/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/tintaq-site/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/tintaq-site/pl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/tintaq-site/ru/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/tintaq-site/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/tintaq-site/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/tintaq-site/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/tintaq-site/zh-Hans/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/tintaq-site/zh-Hant/"/>
+  </url>
+  <url>
+    <loc>https://sanchizas007.github.io/tintaq-site/nl/privacy/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/tintaq-site/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/tintaq-site/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/tintaq-site/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/tintaq-site/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/tintaq-site/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/tintaq-site/pt-BR/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/tintaq-site/nl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/tintaq-site/pl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/tintaq-site/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/tintaq-site/tr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/tintaq-site/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/tintaq-site/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/tintaq-site/zh-Hans/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/tintaq-site/zh-Hant/privacy/"/>
+  </url>
+  <url>
+    <loc>https://sanchizas007.github.io/tintaq-site/nl/terms/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/tintaq-site/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/tintaq-site/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/tintaq-site/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/tintaq-site/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/tintaq-site/it/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/tintaq-site/pt-BR/terms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/tintaq-site/nl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/tintaq-site/pl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/tintaq-site/ru/terms/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/tintaq-site/tr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/tintaq-site/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/tintaq-site/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/tintaq-site/zh-Hans/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/tintaq-site/zh-Hant/terms/"/>
+  </url>
+  <url>
+    <loc>https://sanchizas007.github.io/tintaq-site/nl/support/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/tintaq-site/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/tintaq-site/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/tintaq-site/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/tintaq-site/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/tintaq-site/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/tintaq-site/pt-BR/support/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/tintaq-site/nl/support/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/tintaq-site/pl/support/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/tintaq-site/ru/support/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/tintaq-site/tr/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/tintaq-site/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/tintaq-site/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/tintaq-site/zh-Hans/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/tintaq-site/zh-Hant/support/"/>
   </url>
   <url>
     <loc>https://sanchizas007.github.io/tintaq-site/pl/</loc>
@@ -167,9 +539,18 @@
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/tintaq-site/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/tintaq-site/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/tintaq-site/fr/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/tintaq-site/es/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/tintaq-site/it/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/tintaq-site/pt-BR/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/tintaq-site/nl/"/>
     <xhtml:link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/tintaq-site/pl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/tintaq-site/ru/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/tintaq-site/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/tintaq-site/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/tintaq-site/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/tintaq-site/zh-Hans/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/tintaq-site/zh-Hant/"/>
   </url>
   <url>
     <loc>https://sanchizas007.github.io/tintaq-site/pl/privacy/</loc>
@@ -177,9 +558,18 @@
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/tintaq-site/privacy/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/tintaq-site/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/tintaq-site/fr/privacy/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/tintaq-site/es/privacy/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/tintaq-site/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/tintaq-site/pt-BR/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/tintaq-site/nl/privacy/"/>
     <xhtml:link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/tintaq-site/pl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/tintaq-site/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/tintaq-site/tr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/tintaq-site/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/tintaq-site/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/tintaq-site/zh-Hans/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/tintaq-site/zh-Hant/privacy/"/>
   </url>
   <url>
     <loc>https://sanchizas007.github.io/tintaq-site/pl/terms/</loc>
@@ -187,9 +577,18 @@
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/tintaq-site/terms/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/tintaq-site/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/tintaq-site/fr/terms/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/tintaq-site/es/terms/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/tintaq-site/it/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/tintaq-site/pt-BR/terms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/tintaq-site/nl/terms/"/>
     <xhtml:link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/tintaq-site/pl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/tintaq-site/ru/terms/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/tintaq-site/tr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/tintaq-site/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/tintaq-site/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/tintaq-site/zh-Hans/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/tintaq-site/zh-Hant/terms/"/>
   </url>
   <url>
     <loc>https://sanchizas007.github.io/tintaq-site/pl/support/</loc>
@@ -197,8 +596,473 @@
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/tintaq-site/support/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/tintaq-site/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/tintaq-site/fr/support/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/tintaq-site/es/support/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/tintaq-site/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/tintaq-site/pt-BR/support/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/tintaq-site/nl/support/"/>
     <xhtml:link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/tintaq-site/pl/support/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/tintaq-site/ru/support/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/tintaq-site/tr/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/tintaq-site/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/tintaq-site/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/tintaq-site/zh-Hans/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/tintaq-site/zh-Hant/support/"/>
+  </url>
+  <url>
+    <loc>https://sanchizas007.github.io/tintaq-site/ru/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/tintaq-site/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/tintaq-site/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/tintaq-site/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/tintaq-site/es/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/tintaq-site/it/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/tintaq-site/pt-BR/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/tintaq-site/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/tintaq-site/pl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/tintaq-site/ru/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/tintaq-site/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/tintaq-site/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/tintaq-site/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/tintaq-site/zh-Hans/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/tintaq-site/zh-Hant/"/>
+  </url>
+  <url>
+    <loc>https://sanchizas007.github.io/tintaq-site/ru/privacy/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/tintaq-site/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/tintaq-site/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/tintaq-site/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/tintaq-site/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/tintaq-site/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/tintaq-site/pt-BR/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/tintaq-site/nl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/tintaq-site/pl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/tintaq-site/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/tintaq-site/tr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/tintaq-site/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/tintaq-site/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/tintaq-site/zh-Hans/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/tintaq-site/zh-Hant/privacy/"/>
+  </url>
+  <url>
+    <loc>https://sanchizas007.github.io/tintaq-site/ru/terms/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/tintaq-site/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/tintaq-site/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/tintaq-site/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/tintaq-site/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/tintaq-site/it/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/tintaq-site/pt-BR/terms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/tintaq-site/nl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/tintaq-site/pl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/tintaq-site/ru/terms/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/tintaq-site/tr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/tintaq-site/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/tintaq-site/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/tintaq-site/zh-Hans/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/tintaq-site/zh-Hant/terms/"/>
+  </url>
+  <url>
+    <loc>https://sanchizas007.github.io/tintaq-site/ru/support/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/tintaq-site/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/tintaq-site/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/tintaq-site/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/tintaq-site/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/tintaq-site/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/tintaq-site/pt-BR/support/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/tintaq-site/nl/support/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/tintaq-site/pl/support/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/tintaq-site/ru/support/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/tintaq-site/tr/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/tintaq-site/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/tintaq-site/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/tintaq-site/zh-Hans/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/tintaq-site/zh-Hant/support/"/>
+  </url>
+  <url>
+    <loc>https://sanchizas007.github.io/tintaq-site/tr/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/tintaq-site/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/tintaq-site/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/tintaq-site/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/tintaq-site/es/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/tintaq-site/it/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/tintaq-site/pt-BR/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/tintaq-site/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/tintaq-site/pl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/tintaq-site/ru/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/tintaq-site/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/tintaq-site/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/tintaq-site/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/tintaq-site/zh-Hans/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/tintaq-site/zh-Hant/"/>
+  </url>
+  <url>
+    <loc>https://sanchizas007.github.io/tintaq-site/tr/privacy/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/tintaq-site/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/tintaq-site/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/tintaq-site/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/tintaq-site/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/tintaq-site/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/tintaq-site/pt-BR/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/tintaq-site/nl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/tintaq-site/pl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/tintaq-site/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/tintaq-site/tr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/tintaq-site/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/tintaq-site/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/tintaq-site/zh-Hans/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/tintaq-site/zh-Hant/privacy/"/>
+  </url>
+  <url>
+    <loc>https://sanchizas007.github.io/tintaq-site/tr/terms/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/tintaq-site/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/tintaq-site/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/tintaq-site/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/tintaq-site/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/tintaq-site/it/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/tintaq-site/pt-BR/terms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/tintaq-site/nl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/tintaq-site/pl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/tintaq-site/ru/terms/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/tintaq-site/tr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/tintaq-site/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/tintaq-site/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/tintaq-site/zh-Hans/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/tintaq-site/zh-Hant/terms/"/>
+  </url>
+  <url>
+    <loc>https://sanchizas007.github.io/tintaq-site/tr/support/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/tintaq-site/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/tintaq-site/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/tintaq-site/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/tintaq-site/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/tintaq-site/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/tintaq-site/pt-BR/support/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/tintaq-site/nl/support/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/tintaq-site/pl/support/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/tintaq-site/ru/support/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/tintaq-site/tr/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/tintaq-site/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/tintaq-site/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/tintaq-site/zh-Hans/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/tintaq-site/zh-Hant/support/"/>
+  </url>
+  <url>
+    <loc>https://sanchizas007.github.io/tintaq-site/ja/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/tintaq-site/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/tintaq-site/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/tintaq-site/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/tintaq-site/es/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/tintaq-site/it/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/tintaq-site/pt-BR/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/tintaq-site/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/tintaq-site/pl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/tintaq-site/ru/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/tintaq-site/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/tintaq-site/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/tintaq-site/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/tintaq-site/zh-Hans/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/tintaq-site/zh-Hant/"/>
+  </url>
+  <url>
+    <loc>https://sanchizas007.github.io/tintaq-site/ja/privacy/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/tintaq-site/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/tintaq-site/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/tintaq-site/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/tintaq-site/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/tintaq-site/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/tintaq-site/pt-BR/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/tintaq-site/nl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/tintaq-site/pl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/tintaq-site/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/tintaq-site/tr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/tintaq-site/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/tintaq-site/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/tintaq-site/zh-Hans/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/tintaq-site/zh-Hant/privacy/"/>
+  </url>
+  <url>
+    <loc>https://sanchizas007.github.io/tintaq-site/ja/terms/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/tintaq-site/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/tintaq-site/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/tintaq-site/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/tintaq-site/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/tintaq-site/it/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/tintaq-site/pt-BR/terms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/tintaq-site/nl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/tintaq-site/pl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/tintaq-site/ru/terms/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/tintaq-site/tr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/tintaq-site/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/tintaq-site/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/tintaq-site/zh-Hans/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/tintaq-site/zh-Hant/terms/"/>
+  </url>
+  <url>
+    <loc>https://sanchizas007.github.io/tintaq-site/ja/support/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/tintaq-site/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/tintaq-site/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/tintaq-site/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/tintaq-site/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/tintaq-site/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/tintaq-site/pt-BR/support/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/tintaq-site/nl/support/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/tintaq-site/pl/support/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/tintaq-site/ru/support/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/tintaq-site/tr/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/tintaq-site/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/tintaq-site/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/tintaq-site/zh-Hans/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/tintaq-site/zh-Hant/support/"/>
+  </url>
+  <url>
+    <loc>https://sanchizas007.github.io/tintaq-site/ko/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/tintaq-site/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/tintaq-site/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/tintaq-site/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/tintaq-site/es/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/tintaq-site/it/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/tintaq-site/pt-BR/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/tintaq-site/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/tintaq-site/pl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/tintaq-site/ru/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/tintaq-site/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/tintaq-site/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/tintaq-site/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/tintaq-site/zh-Hans/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/tintaq-site/zh-Hant/"/>
+  </url>
+  <url>
+    <loc>https://sanchizas007.github.io/tintaq-site/ko/privacy/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/tintaq-site/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/tintaq-site/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/tintaq-site/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/tintaq-site/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/tintaq-site/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/tintaq-site/pt-BR/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/tintaq-site/nl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/tintaq-site/pl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/tintaq-site/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/tintaq-site/tr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/tintaq-site/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/tintaq-site/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/tintaq-site/zh-Hans/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/tintaq-site/zh-Hant/privacy/"/>
+  </url>
+  <url>
+    <loc>https://sanchizas007.github.io/tintaq-site/ko/terms/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/tintaq-site/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/tintaq-site/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/tintaq-site/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/tintaq-site/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/tintaq-site/it/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/tintaq-site/pt-BR/terms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/tintaq-site/nl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/tintaq-site/pl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/tintaq-site/ru/terms/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/tintaq-site/tr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/tintaq-site/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/tintaq-site/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/tintaq-site/zh-Hans/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/tintaq-site/zh-Hant/terms/"/>
+  </url>
+  <url>
+    <loc>https://sanchizas007.github.io/tintaq-site/ko/support/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/tintaq-site/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/tintaq-site/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/tintaq-site/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/tintaq-site/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/tintaq-site/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/tintaq-site/pt-BR/support/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/tintaq-site/nl/support/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/tintaq-site/pl/support/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/tintaq-site/ru/support/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/tintaq-site/tr/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/tintaq-site/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/tintaq-site/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/tintaq-site/zh-Hans/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/tintaq-site/zh-Hant/support/"/>
+  </url>
+  <url>
+    <loc>https://sanchizas007.github.io/tintaq-site/zh-Hans/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/tintaq-site/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/tintaq-site/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/tintaq-site/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/tintaq-site/es/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/tintaq-site/it/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/tintaq-site/pt-BR/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/tintaq-site/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/tintaq-site/pl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/tintaq-site/ru/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/tintaq-site/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/tintaq-site/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/tintaq-site/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/tintaq-site/zh-Hans/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/tintaq-site/zh-Hant/"/>
+  </url>
+  <url>
+    <loc>https://sanchizas007.github.io/tintaq-site/zh-Hans/privacy/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/tintaq-site/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/tintaq-site/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/tintaq-site/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/tintaq-site/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/tintaq-site/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/tintaq-site/pt-BR/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/tintaq-site/nl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/tintaq-site/pl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/tintaq-site/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/tintaq-site/tr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/tintaq-site/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/tintaq-site/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/tintaq-site/zh-Hans/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/tintaq-site/zh-Hant/privacy/"/>
+  </url>
+  <url>
+    <loc>https://sanchizas007.github.io/tintaq-site/zh-Hans/terms/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/tintaq-site/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/tintaq-site/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/tintaq-site/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/tintaq-site/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/tintaq-site/it/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/tintaq-site/pt-BR/terms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/tintaq-site/nl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/tintaq-site/pl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/tintaq-site/ru/terms/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/tintaq-site/tr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/tintaq-site/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/tintaq-site/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/tintaq-site/zh-Hans/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/tintaq-site/zh-Hant/terms/"/>
+  </url>
+  <url>
+    <loc>https://sanchizas007.github.io/tintaq-site/zh-Hans/support/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/tintaq-site/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/tintaq-site/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/tintaq-site/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/tintaq-site/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/tintaq-site/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/tintaq-site/pt-BR/support/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/tintaq-site/nl/support/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/tintaq-site/pl/support/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/tintaq-site/ru/support/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/tintaq-site/tr/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/tintaq-site/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/tintaq-site/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/tintaq-site/zh-Hans/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/tintaq-site/zh-Hant/support/"/>
+  </url>
+  <url>
+    <loc>https://sanchizas007.github.io/tintaq-site/zh-Hant/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/tintaq-site/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/tintaq-site/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/tintaq-site/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/tintaq-site/es/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/tintaq-site/it/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/tintaq-site/pt-BR/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/tintaq-site/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/tintaq-site/pl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/tintaq-site/ru/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/tintaq-site/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/tintaq-site/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/tintaq-site/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/tintaq-site/zh-Hans/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/tintaq-site/zh-Hant/"/>
+  </url>
+  <url>
+    <loc>https://sanchizas007.github.io/tintaq-site/zh-Hant/privacy/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/tintaq-site/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/tintaq-site/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/tintaq-site/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/tintaq-site/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/tintaq-site/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/tintaq-site/pt-BR/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/tintaq-site/nl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/tintaq-site/pl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/tintaq-site/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/tintaq-site/tr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/tintaq-site/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/tintaq-site/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/tintaq-site/zh-Hans/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/tintaq-site/zh-Hant/privacy/"/>
+  </url>
+  <url>
+    <loc>https://sanchizas007.github.io/tintaq-site/zh-Hant/terms/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/tintaq-site/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/tintaq-site/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/tintaq-site/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/tintaq-site/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/tintaq-site/it/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/tintaq-site/pt-BR/terms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/tintaq-site/nl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/tintaq-site/pl/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/tintaq-site/ru/terms/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/tintaq-site/tr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/tintaq-site/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/tintaq-site/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/tintaq-site/zh-Hans/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/tintaq-site/zh-Hant/terms/"/>
+  </url>
+  <url>
+    <loc>https://sanchizas007.github.io/tintaq-site/zh-Hant/support/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/tintaq-site/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/tintaq-site/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/tintaq-site/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/tintaq-site/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/tintaq-site/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/tintaq-site/pt-BR/support/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/tintaq-site/nl/support/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/tintaq-site/pl/support/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/tintaq-site/ru/support/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/tintaq-site/tr/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/tintaq-site/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/tintaq-site/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/tintaq-site/zh-Hans/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/tintaq-site/zh-Hant/support/"/>
   </url>
 </urlset>
