@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /fill/
+Disallow: /r/
 
 Sitemap: https://sanchizas007.github.io/tintaq-site/sitemap.xml

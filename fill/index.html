@@ -1,0 +1,561 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<meta name="color-scheme" content="light dark">
+<!-- The page cannot talk to anything: no fetch, no forms, no frames, no images but its own QR code. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data:; connect-src 'none'; form-action 'none'; base-uri 'none'">
+<title>Tintaq</title>
+<style>:root{color-scheme:light dark;
+ --bg:#f6f3ef;--card:#fff;--alt:#efebe5;--line:#e0dad1;--txt:#17150f;--mut:#6f685f;
+ --acc:#8a6132;--fill:#d8b892;--onfill:#20170d;--warn:#9a6b12;--alert:#a8352e;--ok:#2c7a54;
+ --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans","Noto Sans Thai","Noto Sans Devanagari",Helvetica,Arial,sans-serif}
+@media(prefers-color-scheme:dark){:root{
+ --bg:#101012;--card:#1b1b1e;--alt:#25252a;--line:#2e2e34;--txt:#f3f1ee;--mut:#9a9691;
+ --acc:#d8b892;--warn:#d9a441;--alert:#e0736b;--ok:#5fbf8a}}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--txt);font:16px/1.5 var(--font)}
+.wrap{max-width:520px;margin:0 auto;padding:18px 20px calc(44px + env(safe-area-inset-bottom))}
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:26px}
+.brand{font:700 18px/1 ui-serif,"New York",Georgia,"Times New Roman",serif;letter-spacing:.2px;color:var(--txt)}
+.brand i{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--fill);margin-left:5px;vertical-align:2px}
+.lang{appearance:none;-webkit-appearance:none;background:var(--card) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%23999' stroke-width='1.6' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat right 11px center;
+ color:var(--txt);border:1px solid var(--line);border-radius:10px;padding:8px 30px 8px 12px;font:14px/1.2 var(--font);max-width:60%}
+h1,h2{font-family:ui-serif,"New York",Georgia,"Times New Roman",serif;font-weight:600;letter-spacing:-.3px;margin:0}
+h1{font-size:clamp(28px,8vw,36px);line-height:1.12}
+h1 .studio{color:var(--acc)}
+h2{font-size:26px;line-height:1.2;outline:none}
+.rule{width:44px;height:3px;border-radius:2px;background:var(--fill);margin:16px 0 18px}
+p{margin:0 0 14px}
+.lead{color:var(--mut);font-size:17px}
+.mut{color:var(--mut)}
+.small{font-size:13.5px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+.note{display:flex;gap:11px;align-items:flex-start;background:color-mix(in srgb,var(--acc) 9%,transparent);
+ border:1px solid color-mix(in srgb,var(--acc) 26%,transparent);border-radius:12px;padding:12px 14px;font-size:14.5px;margin:16px 0}
+.note svg{flex:none;margin-top:2px;color:var(--acc)}
+.note.warn{background:color-mix(in srgb,var(--warn) 11%,transparent);border-color:color-mix(in srgb,var(--warn) 30%,transparent)}
+.note.warn svg{color:var(--warn)}
+.note.bad{background:color-mix(in srgb,var(--alert) 10%,transparent);border-color:color-mix(in srgb,var(--alert) 32%,transparent)}
+.note.bad svg{color:var(--alert)}
+.btn{display:block;width:100%;border:0;border-radius:13px;padding:16px 18px;font:600 17px/1.2 var(--font);text-align:center;
+ background:var(--fill);color:var(--onfill);cursor:pointer;text-decoration:none}
+.btn:active{opacity:.85}
+.btn.ghost{background:transparent;color:var(--txt);border:1px solid var(--line)}
+.btn[disabled]{opacity:.5}
+.btns{display:grid;gap:10px;margin-top:22px}
+.btns.two{grid-template-columns:1fr 1fr}
+.btns.two .btn{padding:14px 10px;font-size:16px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin:0 0 8px}
+.steps i{display:block;height:4px;border-radius:2px;background:var(--alt)}
+.steps i.on{background:var(--fill)}
+.stepname{font-size:13px;letter-spacing:.7px;text-transform:uppercase;color:var(--mut);margin:0 0 20px}
+.field{display:block;margin:0 0 14px}
+.field>span{display:block;font-size:13.5px;color:var(--mut);margin:0 0 6px}
+.field>span em{font-style:normal;opacity:.75}
+input[type=text],input[type=email],input[type=tel],input[type=date],textarea{width:100%;background:var(--card);color:var(--txt);
+ border:1px solid var(--line);border-radius:12px;padding:14px;font:16px/1.3 var(--font);-webkit-appearance:none;appearance:none;min-height:50px}
+input[type=date]{display:block;min-width:0}
+textarea{min-height:84px;resize:vertical}
+input:focus,textarea:focus,select:focus,.btn:focus-visible,.seg input:focus-visible+span{outline:2px solid var(--acc);outline-offset:2px}
+.err input,.err textarea,.err .segs{border-color:var(--alert)}
+.err>span{color:var(--alert)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+body[data-order=family] .row .f1{order:2}
+@media(max-width:380px){.row{grid-template-columns:1fr}body[data-order=family] .row .f1{order:0}}
+.q{margin:0 0 12px}
+.q p{font-size:16px;margin:0 0 11px}
+.segs{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;border:1px solid transparent;border-radius:11px}
+.seg{position:relative;display:block}
+.seg input{position:absolute;opacity:0;inset:0;width:100%;height:100%;margin:0;cursor:pointer}
+.seg span{display:block;text-align:center;padding:11px 6px;border-radius:10px;background:var(--alt);color:var(--mut);font-size:15px;min-height:44px;
+ display:flex;align-items:center;justify-content:center;line-height:1.2}
+.seg input:checked+span{font-weight:600;color:var(--onfill);background:var(--fill)}
+.seg.yes input:checked+span{background:var(--warn);color:#fff}
+.seg.unsure input:checked+span{background:var(--mut);color:var(--bg)}
+.detail{margin-top:10px}
+.detail[hidden]{display:none}
+.sum{margin:0 0 14px}
+.sum h3{font:600 13px/1.2 var(--font);letter-spacing:.7px;text-transform:uppercase;color:var(--mut);margin:0 0 8px;display:flex;justify-content:space-between;align-items:center}
+.sum h3 button{background:none;border:0;color:var(--acc);font:600 14px/1 var(--font);text-transform:none;letter-spacing:0;padding:6px 0;cursor:pointer}
+.sum dl{margin:0}
+.sum div.k{display:flex;justify-content:space-between;gap:14px;padding:7px 0;border-top:1px solid var(--line);font-size:15px}
+.sum div.k:first-child{border-top:0}
+.sum dt{color:var(--mut)}
+.sum dd{margin:0;text-align:right;font-weight:600;overflow-wrap:anywhere}
+.sum .hq{font-size:15px;padding:8px 0;border-top:1px solid var(--line)}
+.sum .hq:first-child{border-top:0}
+.sum .hq b{display:inline-block;font-size:12px;letter-spacing:.4px;text-transform:uppercase;border-radius:6px;padding:2px 7px;margin-left:6px;
+ background:var(--alt);color:var(--mut);vertical-align:1px}
+.sum .hq b.yes{background:color-mix(in srgb,var(--warn) 18%,transparent);color:var(--warn)}
+.sum .hq .why{display:block;color:var(--mut);font-size:14px;margin-top:3px}
+.tick{width:64px;height:64px;border-radius:50%;background:var(--fill);color:var(--onfill);display:grid;place-items:center;margin:4px 0 18px}
+.qr{background:#fff;border-radius:16px;padding:14px;margin:20px auto 0;max-width:340px;border:1px solid var(--line)}
+.qr svg{display:block;width:100%;height:auto}
+.qr p{color:#555;text-align:center;font-size:14px;margin:10px 0 0}
+footer{margin-top:34px;padding-top:18px;border-top:1px solid var(--line);color:var(--mut);font-size:13.5px}
+footer a{color:var(--acc);font-weight:600;text-decoration:none}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media(prefers-reduced-motion:no-preference){.panel{animation:rise .28s ease both}@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}}</style>
+</head>
+<body>
+<div class="wrap" id="app"></div>
+<!-- qrcode-generator 1.4.4, MIT License, (c) Kazuhiko Arase -->
+<script>var qrcode=function(){function i(t,r){function a(t,r){g=function(t){for(var r=new Array(t),e=0;e<t;e+=1){r[e]=new Array(t);for(var n=0;n<t;n+=1)r[e][n]=null}return r}(l=4*u+17),e(0,0),e(l-7,0),e(0,l-7),i(),o(),v(t,r),7<=u&&h(t),null==n&&(n=w(u,f,c)),d(n,r)}var u=t,f=y[r],g=null,l=0,n=null,c=[],s={},e=function(t,r){for(var e=-1;e<=7;e+=1)if(!(t+e<=-1||l<=t+e))for(var n=-1;n<=7;n+=1)r+n<=-1||l<=r+n||(g[t+e][r+n]=0<=e&&e<=6&&(0==n||6==n)||0<=n&&n<=6&&(0==e||6==e)||2<=e&&e<=4&&2<=n&&n<=4)},o=function(){for(var t=8;t<l-8;t+=1)null==g[t][6]&&(g[t][6]=t%2==0);for(var r=8;r<l-8;r+=1)null==g[6][r]&&(g[6][r]=r%2==0)},i=function(){for(var t=B.getPatternPosition(u),r=0;r<t.length;r+=1)for(var e=0;e<t.length;e+=1){var n=t[r],o=t[e];if(null==g[n][o])for(var i=-2;i<=2;i+=1)for(var a=-2;a<=2;a+=1)g[n+i][o+a]=-2==i||2==i||-2==a||2==a||0==i&&0==a}},h=function(t){for(var r=B.getBCHTypeNumber(u),e=0;e<18;e+=1){var n=!t&&1==(r>>e&1);g[Math.floor(e/3)][e%3+l-8-3]=n}for(e=0;e<18;e+=1){n=!t&&1==(r>>e&1);g[e%3+l-8-3][Math.floor(e/3)]=n}},v=function(t,r){for(var e=f<<3|r,n=B.getBCHTypeInfo(e),o=0;o<15;o+=1){var i=!t&&1==(n>>o&1);o<6?g[o][8]=i:o<8?g[o+1][8]=i:g[l-15+o][8]=i}for(o=0;o<15;o+=1){i=!t&&1==(n>>o&1);o<8?g[8][l-o-1]=i:o<9?g[8][15-o-1+1]=i:g[8][15-o-1]=i}g[l-8][8]=!t},d=function(t,r){for(var e=-1,n=l-1,o=7,i=0,a=B.getMaskFunction(r),u=l-1;0<u;u-=2)for(6==u&&(u-=1);;){for(var f=0;f<2;f+=1)if(null==g[n][u-f]){var c=!1;i<t.length&&(c=1==(t[i]>>>o&1)),a(n,u-f)&&(c=!c),g[n][u-f]=c,-1==(o-=1)&&(i+=1,o=7)}if((n+=e)<0||l<=n){n-=e,e=-e;break}}},w=function(t,r,e){for(var n=b.getRSBlocks(t,r),o=M(),i=0;i<e.length;i+=1){var a=e[i];o.put(a.getMode(),4),o.put(a.getLength(),B.getLengthInBits(a.getMode(),t)),a.write(o)}var u=0;for(i=0;i<n.length;i+=1)u+=n[i].dataCount;if(o.getLengthInBits()>8*u)throw"code length overflow. ("+o.getLengthInBits()+">"+8*u+")";for(o.getLengthInBits()+4<=8*u&&o.put(0,4);o.getLengthInBits()%8!=0;)o.putBit(!1);for(;!(o.getLengthInBits()>=8*u||(o.put(236,8),o.getLengthInBits()>=8*u));)o.put(17,8);return function(t,r){for(var e=0,n=0,o=0,i=new Array(r.length),a=new Array(r.length),u=0;u<r.length;u+=1){var f=r[u].dataCount,c=r[u].totalCount-f;n=Math.max(n,f),o=Math.max(o,c),i[u]=new Array(f);for(var g=0;g<i[u].length;g+=1)i[u][g]=255&t.getBuffer()[g+e];e+=f;var l=B.getErrorCorrectPolynomial(c),h=C(i[u],l.getLength()-1).mod(l);a[u]=new Array(l.getLength()-1);for(g=0;g<a[u].length;g+=1){var s=g+h.getLength()-a[u].length;a[u][g]=0<=s?h.getAt(s):0}}var v=0;for(g=0;g<r.length;g+=1)v+=r[g].totalCount;var d=new Array(v),w=0;for(g=0;g<n;g+=1)for(u=0;u<r.length;u+=1)g<i[u].length&&(d[w]=i[u][g],w+=1);for(g=0;g<o;g+=1)for(u=0;u<r.length;u+=1)g<a[u].length&&(d[w]=a[u][g],w+=1);return d}(o,n)};s.addData=function(t,r){var e=null;switch(r=r||"Byte"){case"Numeric":e=x(t);break;case"Alphanumeric":e=m(t);break;case"Byte":e=L(t);break;case"Kanji":e=D(t);break;default:throw"mode:"+r}c.push(e),n=null},s.isDark=function(t,r){if(t<0||l<=t||r<0||l<=r)throw t+","+r;return g[t][r]},s.getModuleCount=function(){return l},s.make=function(){if(u<1){for(var t=1;t<40;t++){for(var r=b.getRSBlocks(t,f),e=M(),n=0;n<c.length;n++){var o=c[n];e.put(o.getMode(),4),e.put(o.getLength(),B.getLengthInBits(o.getMode(),t)),o.write(e)}var i=0;for(n=0;n<r.length;n++)i+=r[n].dataCount;if(e.getLengthInBits()<=8*i)break}u=t}a(!1,function(){for(var t=0,r=0,e=0;e<8;e+=1){a(!0,e);var n=B.getLostPoint(s);(0==e||n<t)&&(t=n,r=e)}return r}())},s.createTableTag=function(t,r){t=t||2;var e="";e+='<table style="',e+=" border-width: 0px; border-style: none;",e+=" border-collapse: collapse;",e+=" padding: 0px; margin: "+(r=void 0===r?4*t:r)+"px;",e+='">',e+="<tbody>";for(var n=0;n<s.getModuleCount();n+=1){e+="<tr>";for(var o=0;o<s.getModuleCount();o+=1)e+='<td style="',e+=" border-width: 0px; border-style: none;",e+=" border-collapse: collapse;",e+=" padding: 0px; margin: 0px;",e+=" width: "+t+"px;",e+=" height: "+t+"px;",e+=" background-color: ",e+=s.isDark(n,o)?"#000000":"#ffffff",e+=";",e+='"/>';e+="</tr>"}return e+="</tbody>",e+="</table>"},s.createSvgTag=function(t,r,e,n){var o={};"object"==typeof t&&(t=(o=t).cellSize,r=o.margin,e=o.alt,n=o.title),t=t||2,r=void 0===r?4*t:r,(e="string"==typeof e?{text:e}:e||{}).text=e.text||null,e.id=e.text?e.id||"qrcode-description":null,(n="string"==typeof n?{text:n}:n||{}).text=n.text||null,n.id=n.text?n.id||"qrcode-title":null;var i,a,u,f,c=s.getModuleCount()*t+2*r,g="";for(f="l"+t+",0 0,"+t+" -"+t+",0 0,-"+t+"z ",g+='<svg version="1.1" xmlns="http://www.w3.org/2000/svg"',g+=o.scalable?"":' width="'+c+'px" height="'+c+'px"',g+=' viewBox="0 0 '+c+" "+c+'" ',g+=' preserveAspectRatio="xMinYMin meet"',g+=n.text||e.text?' role="img" aria-labelledby="'+p([n.id,e.id].join(" ").trim())+'"':"",g+=">",g+=n.text?'<title id="'+p(n.id)+'">'+p(n.text)+"</title>":"",g+=e.text?'<description id="'+p(e.id)+'">'+p(e.text)+"</description>":"",g+='<rect width="100%" height="100%" fill="white" cx="0" cy="0"/>',g+='<path d="',a=0;a<s.getModuleCount();a+=1)for(u=a*t+r,i=0;i<s.getModuleCount();i+=1)s.isDark(a,i)&&(g+="M"+(i*t+r)+","+u+f);return g+='" stroke="transparent" fill="black"/>',g+="</svg>"},s.createDataURL=function(o,t){o=o||2,t=void 0===t?4*o:t;var r=s.getModuleCount()*o+2*t,i=t,a=r-t;return I(r,r,function(t,r){if(i<=t&&t<a&&i<=r&&r<a){var e=Math.floor((t-i)/o),n=Math.floor((r-i)/o);return s.isDark(n,e)?0:1}return 1})},s.createImgTag=function(t,r,e){t=t||2,r=void 0===r?4*t:r;var n=s.getModuleCount()*t+2*r,o="";return o+="<img",o+=' src="',o+=s.createDataURL(t,r),o+='"',o+=' width="',o+=n,o+='"',o+=' height="',o+=n,o+='"',e&&(o+=' alt="',o+=p(e),o+='"'),o+="/>"};var p=function(t){for(var r="",e=0;e<t.length;e+=1){var n=t.charAt(e);switch(n){case"<":r+="&lt;";break;case">":r+="&gt;";break;case"&":r+="&amp;";break;case'"':r+="&quot;";break;default:r+=n}}return r};return s.createASCII=function(t,r){if((t=t||1)<2)return function(t){t=void 0===t?2:t;var r,e,n,o,i,a=1*s.getModuleCount()+2*t,u=t,f=a-t,c={"██":"█","█ ":"▀"," █":"▄","  ":" "},g={"██":"▀","█ ":"▀"," █":" ","  ":" "},l="";for(r=0;r<a;r+=2){for(n=Math.floor((r-u)/1),o=Math.floor((r+1-u)/1),e=0;e<a;e+=1)i="█",u<=e&&e<f&&u<=r&&r<f&&s.isDark(n,Math.floor((e-u)/1))&&(i=" "),u<=e&&e<f&&u<=r+1&&r+1<f&&s.isDark(o,Math.floor((e-u)/1))?i+=" ":i+="█",l+=t<1&&f<=r+1?g[i]:c[i];l+="\n"}return a%2&&0<t?l.substring(0,l.length-a-1)+Array(1+a).join("▀"):l.substring(0,l.length-1)}(r);t-=1,r=void 0===r?2*t:r;var e,n,o,i,a=s.getModuleCount()*t+2*r,u=r,f=a-r,c=Array(t+1).join("██"),g=Array(t+1).join("  "),l="",h="";for(e=0;e<a;e+=1){for(o=Math.floor((e-u)/t),h="",n=0;n<a;n+=1)i=1,u<=n&&n<f&&u<=e&&e<f&&s.isDark(o,Math.floor((n-u)/t))&&(i=0),h+=i?c:g;for(o=0;o<t;o+=1)l+=h+"\n"}return l.substring(0,l.length-1)},s.renderTo2dContext=function(t,r){r=r||2;for(var e=s.getModuleCount(),n=0;n<e;n++)for(var o=0;o<e;o++)t.fillStyle=s.isDark(n,o)?"black":"white",t.fillRect(n*r,o*r,r,r)},s}i.stringToBytes=(i.stringToBytesFuncs={default:function(t){for(var r=[],e=0;e<t.length;e+=1){var n=t.charCodeAt(e);r.push(255&n)}return r}}).default,i.createStringToBytes=function(u,f){var i=function(){function t(){var t=r.read();if(-1==t)throw"eof";return t}for(var r=S(u),e=0,n={};;){var o=r.read();if(-1==o)break;var i=t(),a=t()<<8|t();n[String.fromCharCode(o<<8|i)]=a,e+=1}if(e!=f)throw e+" != "+f;return n}(),a="?".charCodeAt(0);return function(t){for(var r=[],e=0;e<t.length;e+=1){var n=t.charCodeAt(e);if(n<128)r.push(n);else{var o=i[t.charAt(e)];"number"==typeof o?(255&o)==o?r.push(o):(r.push(o>>>8),r.push(255&o)):r.push(a)}}return r}};var r,t,a=1,u=2,o=4,f=8,y={L:1,M:0,Q:3,H:2},e=0,n=1,c=2,g=3,l=4,h=5,s=6,v=7,B=(r=[[],[6,18],[6,22],[6,26],[6,30],[6,34],[6,22,38],[6,24,42],[6,26,46],[6,28,50],[6,30,54],[6,32,58],[6,34,62],[6,26,46,66],[6,26,48,70],[6,26,50,74],[6,30,54,78],[6,30,56,82],[6,30,58,86],[6,34,62,90],[6,28,50,72,94],[6,26,50,74,98],[6,30,54,78,102],[6,28,54,80,106],[6,32,58,84,110],[6,30,58,86,114],[6,34,62,90,118],[6,26,50,74,98,122],[6,30,54,78,102,126],[6,26,52,78,104,130],[6,30,56,82,108,134],[6,34,60,86,112,138],[6,30,58,86,114,142],[6,34,62,90,118,146],[6,30,54,78,102,126,150],[6,24,50,76,102,128,154],[6,28,54,80,106,132,158],[6,32,58,84,110,136,162],[6,26,54,82,110,138,166],[6,30,58,86,114,142,170]],(t={}).getBCHTypeInfo=function(t){for(var r=t<<10;0<=d(r)-d(1335);)r^=1335<<d(r)-d(1335);return 21522^(t<<10|r)},t.getBCHTypeNumber=function(t){for(var r=t<<12;0<=d(r)-d(7973);)r^=7973<<d(r)-d(7973);return t<<12|r},t.getPatternPosition=function(t){return r[t-1]},t.getMaskFunction=function(t){switch(t){case e:return function(t,r){return(t+r)%2==0};case n:return function(t,r){return t%2==0};case c:return function(t,r){return r%3==0};case g:return function(t,r){return(t+r)%3==0};case l:return function(t,r){return(Math.floor(t/2)+Math.floor(r/3))%2==0};case h:return function(t,r){return t*r%2+t*r%3==0};case s:return function(t,r){return(t*r%2+t*r%3)%2==0};case v:return function(t,r){return(t*r%3+(t+r)%2)%2==0};default:throw"bad maskPattern:"+t}},t.getErrorCorrectPolynomial=function(t){for(var r=C([1],0),e=0;e<t;e+=1)r=r.multiply(C([1,w.gexp(e)],0));return r},t.getLengthInBits=function(t,r){if(1<=r&&r<10)switch(t){case a:return 10;case u:return 9;case o:case f:return 8;default:throw"mode:"+t}else if(r<27)switch(t){case a:return 12;case u:return 11;case o:return 16;case f:return 10;default:throw"mode:"+t}else{if(!(r<41))throw"type:"+r;switch(t){case a:return 14;case u:return 13;case o:return 16;case f:return 12;default:throw"mode:"+t}}},t.getLostPoint=function(t){for(var r=t.getModuleCount(),e=0,n=0;n<r;n+=1)for(var o=0;o<r;o+=1){for(var i=0,a=t.isDark(n,o),u=-1;u<=1;u+=1)if(!(n+u<0||r<=n+u))for(var f=-1;f<=1;f+=1)o+f<0||r<=o+f||0==u&&0==f||a==t.isDark(n+u,o+f)&&(i+=1);5<i&&(e+=3+i-5)}for(n=0;n<r-1;n+=1)for(o=0;o<r-1;o+=1){var c=0;t.isDark(n,o)&&(c+=1),t.isDark(n+1,o)&&(c+=1),t.isDark(n,o+1)&&(c+=1),t.isDark(n+1,o+1)&&(c+=1),0!=c&&4!=c||(e+=3)}for(n=0;n<r;n+=1)for(o=0;o<r-6;o+=1)t.isDark(n,o)&&!t.isDark(n,o+1)&&t.isDark(n,o+2)&&t.isDark(n,o+3)&&t.isDark(n,o+4)&&!t.isDark(n,o+5)&&t.isDark(n,o+6)&&(e+=40);for(o=0;o<r;o+=1)for(n=0;n<r-6;n+=1)t.isDark(n,o)&&!t.isDark(n+1,o)&&t.isDark(n+2,o)&&t.isDark(n+3,o)&&t.isDark(n+4,o)&&!t.isDark(n+5,o)&&t.isDark(n+6,o)&&(e+=40);var g=0;for(o=0;o<r;o+=1)for(n=0;n<r;n+=1)t.isDark(n,o)&&(g+=1);return e+=Math.abs(100*g/r/r-50)/5*10},t);function d(t){for(var r=0;0!=t;)r+=1,t>>>=1;return r}var w=function(){for(var r=new Array(256),e=new Array(256),t=0;t<8;t+=1)r[t]=1<<t;for(t=8;t<256;t+=1)r[t]=r[t-4]^r[t-5]^r[t-6]^r[t-8];for(t=0;t<255;t+=1)e[r[t]]=t;var n={glog:function(t){if(t<1)throw"glog("+t+")";return e[t]},gexp:function(t){for(;t<0;)t+=255;for(;256<=t;)t-=255;return r[t]}};return n}();function C(n,o){if(void 0===n.length)throw n.length+"/"+o;var r=function(){for(var t=0;t<n.length&&0==n[t];)t+=1;for(var r=new Array(n.length-t+o),e=0;e<n.length-t;e+=1)r[e]=n[e+t];return r}(),i={getAt:function(t){return r[t]},getLength:function(){return r.length},multiply:function(t){for(var r=new Array(i.getLength()+t.getLength()-1),e=0;e<i.getLength();e+=1)for(var n=0;n<t.getLength();n+=1)r[e+n]^=w.gexp(w.glog(i.getAt(e))+w.glog(t.getAt(n)));return C(r,0)},mod:function(t){if(i.getLength()-t.getLength()<0)return i;for(var r=w.glog(i.getAt(0))-w.glog(t.getAt(0)),e=new Array(i.getLength()),n=0;n<i.getLength();n+=1)e[n]=i.getAt(n);for(n=0;n<t.getLength();n+=1)e[n]^=w.gexp(w.glog(t.getAt(n))+r);return C(e,0).mod(t)}};return i}function p(){var e=[],o={writeByte:function(t){e.push(255&t)},writeShort:function(t){o.writeByte(t),o.writeByte(t>>>8)},writeBytes:function(t,r,e){r=r||0,e=e||t.length;for(var n=0;n<e;n+=1)o.writeByte(t[n+r])},writeString:function(t){for(var r=0;r<t.length;r+=1)o.writeByte(t.charCodeAt(r))},toByteArray:function(){return e},toString:function(){var t="";t+="[";for(var r=0;r<e.length;r+=1)0<r&&(t+=","),t+=e[r];return t+="]"}};return o}var k,A,b=(k=[[1,26,19],[1,26,16],[1,26,13],[1,26,9],[1,44,34],[1,44,28],[1,44,22],[1,44,16],[1,70,55],[1,70,44],[2,35,17],[2,35,13],[1,100,80],[2,50,32],[2,50,24],[4,25,9],[1,134,108],[2,67,43],[2,33,15,2,34,16],[2,33,11,2,34,12],[2,86,68],[4,43,27],[4,43,19],[4,43,15],[2,98,78],[4,49,31],[2,32,14,4,33,15],[4,39,13,1,40,14],[2,121,97],[2,60,38,2,61,39],[4,40,18,2,41,19],[4,40,14,2,41,15],[2,146,116],[3,58,36,2,59,37],[4,36,16,4,37,17],[4,36,12,4,37,13],[2,86,68,2,87,69],[4,69,43,1,70,44],[6,43,19,2,44,20],[6,43,15,2,44,16],[4,101,81],[1,80,50,4,81,51],[4,50,22,4,51,23],[3,36,12,8,37,13],[2,116,92,2,117,93],[6,58,36,2,59,37],[4,46,20,6,47,21],[7,42,14,4,43,15],[4,133,107],[8,59,37,1,60,38],[8,44,20,4,45,21],[12,33,11,4,34,12],[3,145,115,1,146,116],[4,64,40,5,65,41],[11,36,16,5,37,17],[11,36,12,5,37,13],[5,109,87,1,110,88],[5,65,41,5,66,42],[5,54,24,7,55,25],[11,36,12,7,37,13],[5,122,98,1,123,99],[7,73,45,3,74,46],[15,43,19,2,44,20],[3,45,15,13,46,16],[1,135,107,5,136,108],[10,74,46,1,75,47],[1,50,22,15,51,23],[2,42,14,17,43,15],[5,150,120,1,151,121],[9,69,43,4,70,44],[17,50,22,1,51,23],[2,42,14,19,43,15],[3,141,113,4,142,114],[3,70,44,11,71,45],[17,47,21,4,48,22],[9,39,13,16,40,14],[3,135,107,5,136,108],[3,67,41,13,68,42],[15,54,24,5,55,25],[15,43,15,10,44,16],[4,144,116,4,145,117],[17,68,42],[17,50,22,6,51,23],[19,46,16,6,47,17],[2,139,111,7,140,112],[17,74,46],[7,54,24,16,55,25],[34,37,13],[4,151,121,5,152,122],[4,75,47,14,76,48],[11,54,24,14,55,25],[16,45,15,14,46,16],[6,147,117,4,148,118],[6,73,45,14,74,46],[11,54,24,16,55,25],[30,46,16,2,47,17],[8,132,106,4,133,107],[8,75,47,13,76,48],[7,54,24,22,55,25],[22,45,15,13,46,16],[10,142,114,2,143,115],[19,74,46,4,75,47],[28,50,22,6,51,23],[33,46,16,4,47,17],[8,152,122,4,153,123],[22,73,45,3,74,46],[8,53,23,26,54,24],[12,45,15,28,46,16],[3,147,117,10,148,118],[3,73,45,23,74,46],[4,54,24,31,55,25],[11,45,15,31,46,16],[7,146,116,7,147,117],[21,73,45,7,74,46],[1,53,23,37,54,24],[19,45,15,26,46,16],[5,145,115,10,146,116],[19,75,47,10,76,48],[15,54,24,25,55,25],[23,45,15,25,46,16],[13,145,115,3,146,116],[2,74,46,29,75,47],[42,54,24,1,55,25],[23,45,15,28,46,16],[17,145,115],[10,74,46,23,75,47],[10,54,24,35,55,25],[19,45,15,35,46,16],[17,145,115,1,146,116],[14,74,46,21,75,47],[29,54,24,19,55,25],[11,45,15,46,46,16],[13,145,115,6,146,116],[14,74,46,23,75,47],[44,54,24,7,55,25],[59,46,16,1,47,17],[12,151,121,7,152,122],[12,75,47,26,76,48],[39,54,24,14,55,25],[22,45,15,41,46,16],[6,151,121,14,152,122],[6,75,47,34,76,48],[46,54,24,10,55,25],[2,45,15,64,46,16],[17,152,122,4,153,123],[29,74,46,14,75,47],[49,54,24,10,55,25],[24,45,15,46,46,16],[4,152,122,18,153,123],[13,74,46,32,75,47],[48,54,24,14,55,25],[42,45,15,32,46,16],[20,147,117,4,148,118],[40,75,47,7,76,48],[43,54,24,22,55,25],[10,45,15,67,46,16],[19,148,118,6,149,119],[18,75,47,31,76,48],[34,54,24,34,55,25],[20,45,15,61,46,16]],(A={}).getRSBlocks=function(t,r){var e=function(t,r){switch(r){case y.L:return k[4*(t-1)+0];case y.M:return k[4*(t-1)+1];case y.Q:return k[4*(t-1)+2];case y.H:return k[4*(t-1)+3];default:return}}(t,r);if(void 0===e)throw"bad rs block @ typeNumber:"+t+"/errorCorrectionLevel:"+r;for(var n,o,i=e.length/3,a=[],u=0;u<i;u+=1)for(var f=e[3*u+0],c=e[3*u+1],g=e[3*u+2],l=0;l<f;l+=1)a.push((n=g,o=void 0,(o={}).totalCount=c,o.dataCount=n,o));return a},A),M=function(){var e=[],n=0,o={getBuffer:function(){return e},getAt:function(t){var r=Math.floor(t/8);return 1==(e[r]>>>7-t%8&1)},put:function(t,r){for(var e=0;e<r;e+=1)o.putBit(1==(t>>>r-e-1&1))},getLengthInBits:function(){return n},putBit:function(t){var r=Math.floor(n/8);e.length<=r&&e.push(0),t&&(e[r]|=128>>>n%8),n+=1}};return o},x=function(t){var r=a,n=t,e={getMode:function(){return r},getLength:function(t){return n.length},write:function(t){for(var r=n,e=0;e+2<r.length;)t.put(o(r.substring(e,e+3)),10),e+=3;e<r.length&&(r.length-e==1?t.put(o(r.substring(e,e+1)),4):r.length-e==2&&t.put(o(r.substring(e,e+2)),7))}},o=function(t){for(var r=0,e=0;e<t.length;e+=1)r=10*r+i(t.charAt(e));return r},i=function(t){if("0"<=t&&t<="9")return t.charCodeAt(0)-"0".charCodeAt(0);throw"illegal char :"+t};return e},m=function(t){var r=u,n=t,e={getMode:function(){return r},getLength:function(t){return n.length},write:function(t){for(var r=n,e=0;e+1<r.length;)t.put(45*o(r.charAt(e))+o(r.charAt(e+1)),11),e+=2;e<r.length&&t.put(o(r.charAt(e)),6)}},o=function(t){if("0"<=t&&t<="9")return t.charCodeAt(0)-"0".charCodeAt(0);if("A"<=t&&t<="Z")return t.charCodeAt(0)-"A".charCodeAt(0)+10;switch(t){case" ":return 36;case"$":return 37;case"%":return 38;case"*":return 39;case"+":return 40;case"-":return 41;case".":return 42;case"/":return 43;case":":return 44;default:throw"illegal char :"+t}};return e},L=function(t){var r=o,e=i.stringToBytes(t),n={getMode:function(){return r},getLength:function(t){return e.length},write:function(t){for(var r=0;r<e.length;r+=1)t.put(e[r],8)}};return n},D=function(t){var r=f,e=i.stringToBytesFuncs.SJIS;if(!e)throw"sjis not supported.";!function(){var t=e("友");if(2!=t.length||38726!=(t[0]<<8|t[1]))throw"sjis not supported."}();var o=e(t),n={getMode:function(){return r},getLength:function(t){return~~(o.length/2)},write:function(t){for(var r=o,e=0;e+1<r.length;){var n=(255&r[e])<<8|255&r[e+1];if(33088<=n&&n<=40956)n-=33088;else{if(!(57408<=n&&n<=60351))throw"illegal char at "+(e+1)+"/"+n;n-=49472}n=192*(n>>>8&255)+(255&n),t.put(n,13),e+=2}if(e<r.length)throw"illegal char at "+(e+1)}};return n},S=function(t){var e=t,n=0,o=0,i=0,r={read:function(){for(;i<8;){if(n>=e.length){if(0==i)return-1;throw"unexpected end of file./"+i}var t=e.charAt(n);if(n+=1,"="==t)return i=0,-1;t.match(/^\s$/)||(o=o<<6|a(t.charCodeAt(0)),i+=6)}var r=o>>>i-8&255;return i-=8,r}},a=function(t){if(65<=t&&t<=90)return t-65;if(97<=t&&t<=122)return t-97+26;if(48<=t&&t<=57)return t-48+52;if(43==t)return 62;if(47==t)return 63;throw"c:"+t};return r},I=function(t,r,e){for(var n=function(t,r){var n=t,o=r,l=new Array(t*r),e={setPixel:function(t,r,e){l[r*n+t]=e},write:function(t){t.writeString("GIF87a"),t.writeShort(n),t.writeShort(o),t.writeByte(128),t.writeByte(0),t.writeByte(0),t.writeByte(0),t.writeByte(0),t.writeByte(0),t.writeByte(255),t.writeByte(255),t.writeByte(255),t.writeString(","),t.writeShort(0),t.writeShort(0),t.writeShort(n),t.writeShort(o),t.writeByte(0);var r=i(2);t.writeByte(2);for(var e=0;255<r.length-e;)t.writeByte(255),t.writeBytes(r,e,255),e+=255;t.writeByte(r.length-e),t.writeBytes(r,e,r.length-e),t.writeByte(0),t.writeString(";")}},i=function(t){for(var r=1<<t,e=1+(1<<t),n=t+1,o=h(),i=0;i<r;i+=1)o.add(String.fromCharCode(i));o.add(String.fromCharCode(r)),o.add(String.fromCharCode(e));var a=p(),u=function(t){var e=t,n=0,o=0,r={write:function(t,r){if(t>>>r!=0)throw"length over";for(;8<=n+r;)e.writeByte(255&(t<<n|o)),r-=8-n,t>>>=8-n,n=o=0;o|=t<<n,n+=r},flush:function(){0<n&&e.writeByte(o)}};return r}(a);u.write(r,n);var f=0,c=String.fromCharCode(l[f]);for(f+=1;f<l.length;){var g=String.fromCharCode(l[f]);f+=1,o.contains(c+g)?c+=g:(u.write(o.indexOf(c),n),o.size()<4095&&(o.size()==1<<n&&(n+=1),o.add(c+g)),c=g)}return u.write(o.indexOf(c),n),u.write(e,n),u.flush(),a.toByteArray()},h=function(){var r={},e=0,n={add:function(t){if(n.contains(t))throw"dup key:"+t;r[t]=e,e+=1},size:function(){return e},indexOf:function(t){return r[t]},contains:function(t){return void 0!==r[t]}};return n};return e}(t,r),o=0;o<r;o+=1)for(var i=0;i<t;i+=1)n.setPixel(i,o,e(i,o));var a=p();n.write(a);for(var u=function(){function e(t){a+=String.fromCharCode(r(63&t))}var n=0,o=0,i=0,a="",t={},r=function(t){if(t<0);else{if(t<26)return 65+t;if(t<52)return t-26+97;if(t<62)return t-52+48;if(62==t)return 43;if(63==t)return 47}throw"n:"+t};return t.writeByte=function(t){for(n=n<<8|255&t,o+=8,i+=1;6<=o;)e(n>>>o-6),o-=6},t.flush=function(){if(0<o&&(e(n<<6-o),o=n=0),i%3!=0)for(var t=3-i%3,r=0;r<t;r+=1)a+="="},t.toString=function(){return a},t}(),f=a.toByteArray(),c=0;c<f.length;c+=1)u.writeByte(f[c]);return u.flush(),"data:image/gif;base64,"+u};return i}();qrcode.stringToBytesFuncs["UTF-8"]=function(t){return function(t){for(var r=[],e=0;e<t.length;e++){var n=t.charCodeAt(e);n<128?r.push(n):n<2048?r.push(192|n>>6,128|63&n):n<55296||57344<=n?r.push(224|n>>12,128|n>>6&63,128|63&n):(e++,n=65536+((1023&n)<<10|1023&t.charCodeAt(e)),r.push(240|n>>18,128|n>>12&63,128|n>>6&63,128|63&n))}return r}(t)},function(t){"function"==typeof define&&define.amd?define([],t):"object"==typeof exports&&(module.exports=t())}(function(){return qrcode});</script>
+<script>/* The client's side of "send the form ahead", and the same format the app reads.
+ *
+ * The studio's link carries its questions after the `#`; the client answers on the page; the
+ * reply is another link with the answers after its own `#`. A browser never sends what follows
+ * a `#` to a server, so nothing a client types is ever on a machine that is not theirs or the
+ * studio's. TintaqCore/IntakeLink.swift is this file in Swift; `intake.test.mjs` and
+ * `IntakeLinkTests` each hold a payload the other produced, so the two cannot drift apart.
+ *
+ * Payload: one letter, then URL-safe base64. `j` is plain JSON, `z` is raw DEFLATE.
+ */
+(function (root) {
+  "use strict";
+
+  var SITE = "https://sanchizas007.github.io/tintaq-site";
+  var VERSION = 1;
+  var MAX_PAYLOAD = 12000;      // characters of an incoming link
+  var MAX_DECODED = 16384;      // bytes after unpacking
+
+  // The studio's standard questions travel as ids; whether a "yes" needs words is part of the id.
+  var STANDARD = {
+    conditions: 1, medication: 1, allergies: 1, inkReaction: 1, bloodborne: 0,
+    pregnant: 0, skinCondition: 1, influence: 0, ateToday: 0
+  };
+
+  function b64urlEncode(bytes) {
+    var s = "";
+    for (var i = 0; i < bytes.length; i++) s += String.fromCharCode(bytes[i]);
+    return btoa(s).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
+  }
+
+  function b64urlDecode(text) {
+    if (!/^[A-Za-z0-9_-]*$/.test(text)) throw new Error("malformed");
+    var s = text.replace(/-/g, "+").replace(/_/g, "/");
+    while (s.length % 4) s += "=";
+    var bin = atob(s), out = new Uint8Array(bin.length);
+    for (var i = 0; i < bin.length; i++) out[i] = bin.charCodeAt(i);
+    return out;
+  }
+
+  function utf8(text) { return new TextEncoder().encode(text); }
+  function unutf8(bytes) { return new TextDecoder("utf-8", { fatal: true }).decode(bytes); }
+
+  function canDeflate() {
+    return typeof CompressionStream === "function" && typeof DecompressionStream === "function";
+  }
+
+  async function pipe(bytes, stream) {
+    var w = stream.writable.getWriter();
+    // When the reader gives up on an oversized stream the writer is aborted too; nobody is waiting for it.
+    w.write(bytes).catch(function () {});
+    w.close().catch(function () {});
+    var reader = stream.readable.getReader(), chunks = [], total = 0;
+    for (;;) {
+      var r = await reader.read();
+      if (r.done) break;
+      total += r.value.length;
+      // The limit applies to what comes out, not to what went in.
+      if (total > MAX_DECODED) { try { reader.cancel(); } catch (e) {} throw new Error("tooLarge"); }
+      chunks.push(r.value);
+    }
+    var out = new Uint8Array(total), at = 0;
+    chunks.forEach(function (c) { out.set(c, at); at += c.length; });
+    return out;
+  }
+
+  async function encode(object, opts) {
+    var json = utf8(JSON.stringify(object));
+    var compress = !(opts && opts.compress === false);
+    if (compress && canDeflate()) {
+      var packed = await pipe(json, new CompressionStream("deflate-raw"));
+      if (packed.length < json.length) return "z" + b64urlEncode(packed);
+    }
+    return "j" + b64urlEncode(json);
+  }
+
+  async function decode(payload) {
+    if (typeof payload !== "string" || payload.length < 2) throw new Error("notAPayload");
+    if (payload.length > MAX_PAYLOAD) throw new Error("tooLarge");
+    var body = b64urlDecode(payload.slice(1)), json;
+    if (payload[0] === "j") json = body;
+    else if (payload[0] === "z") {
+      if (!canDeflate()) throw new Error("unsupported");
+      json = await pipe(body, new DecompressionStream("deflate-raw"));
+    } else throw new Error("notAPayload");
+    if (json.length > MAX_DECODED) throw new Error("tooLarge");
+    var object = JSON.parse(unutf8(json));
+    if (!object || typeof object !== "object" || Array.isArray(object)) throw new Error("malformed");
+    return object;
+  }
+
+  /* The studio's request, checked. Everything in it came out of a link, so nothing is trusted:
+     a name is text, a question has an id of sane length, and there are not a thousand of them. */
+  function parseRequest(object) {
+    if (!object || object.v !== VERSION) return null;
+    var studio = typeof object.s === "string" ? object.s.replace(/[\u0000-\u001f\u007f]/g, "").trim().slice(0, 80) : "";
+    var kind = typeof object.k === "string" ? object.k.slice(0, 24) : "tattoo";
+    if (!Array.isArray(object.q) || object.q.length > 40) return null;
+    var questions = [];
+    for (var i = 0; i < object.q.length; i++) {
+      var q = object.q[i], id, text = "", detail = 0;
+      if (typeof q === "string") { id = q; detail = STANDARD[q] ? 1 : 0; if (!(q in STANDARD)) return null; }
+      else if (q && typeof q === "object" && typeof q.i === "string") {
+        id = q.i; detail = q.d ? 1 : 0;
+        if (typeof q.t === "string") text = q.t.replace(/[\u0000-\u001f\u007f]/g, " ").trim().slice(0, 300);
+        if (!text && !(id in STANDARD)) return null;
+      } else return null;
+      if (!id || id.length > 40) return null;
+      questions.push({ id: id, text: text, detail: !!detail });
+    }
+    return { studio: studio, kind: kind, questions: questions };
+  }
+
+  function clean(text, limit, multiline) {
+    var t = String(text == null ? "" : text);
+    t = multiline ? t.replace(/[\u0000-\u0009\u000b-\u001f\u007f]/g, "") : t.replace(/[\u0000-\u001f\u007f]/g, " ");
+    return t.trim().slice(0, limit);
+  }
+
+  /* answers: id -> 0 (no) | 1 (yes) | 2 (not sure). */
+  function buildReply(state, request) {
+    var a = {}, d = {};
+    request.questions.forEach(function (q) {
+      if (state.answers[q.id] !== undefined) a[q.id] = state.answers[q.id];
+      var detail = clean(state.details[q.id], 500, true);
+      if (detail) d[q.id] = detail;
+    });
+    var reply = {
+      v: VERSION,
+      f: clean(state.first, 60), l: clean(state.last, 60),
+      b: state.birth, p: clean(state.phone, 32), e: clean(state.email, 100),
+      a: a, d: d,
+      t: Math.floor(Date.now() / 1000),
+      g: state.language, k: request.kind
+    };
+    return reply;
+  }
+
+  function ageOn(iso, now) {
+    var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(iso || "");
+    if (!m) return null;
+    var y = +m[1], mo = +m[2], d = +m[3];
+    var date = new Date(Date.UTC(y, mo - 1, d));
+    if (date.getUTCFullYear() !== y || date.getUTCMonth() !== mo - 1 || date.getUTCDate() !== d) return null;
+    if (y < 1900) return null;
+    var today = now || new Date();
+    var age = today.getFullYear() - y;
+    if (today.getMonth() + 1 < mo || (today.getMonth() + 1 === mo && today.getDate() < d)) age--;
+    return age < 0 ? null : age;
+  }
+
+  var api = {
+    SITE: SITE, VERSION: VERSION, STANDARD: STANDARD, MAX_PAYLOAD: MAX_PAYLOAD,
+    encode: encode, decode: decode, parseRequest: parseRequest, buildReply: buildReply,
+    ageOn: ageOn, canDeflate: canDeflate, b64urlEncode: b64urlEncode, b64urlDecode: b64urlDecode
+  };
+  if (typeof module !== "undefined" && module.exports) module.exports = api;
+  else root.Intake = api;
+})(typeof self !== "undefined" ? self : this);</script>
+<script>
+var I18N = {"en":{"common.back":"Back","common.continue":"Continue","fill.birth":"Date of birth","fill.check.title":"Check your answers","fill.copied":"Link copied","fill.copy":"Copy link","fill.done.body":"Send them to {studio}, or show the code below when you arrive. They have not left your phone yet.","fill.done.title":"Your answers are ready","fill.edit":"Change my answers","fill.email":"Email","fill.firstName":"First name","fill.footer":"Made with Tintaq, an app for tattoo and piercing studios.","fill.footer.link":"Get Tintaq","fill.health.intro":"Please answer honestly. The artist reads your answers before starting, and it keeps you safe.","fill.hello":"Before your visit to {studio}","fill.intro":"Fill in your details and a few health questions now, so nobody has to type them in at the desk. It takes about two minutes.","fill.invalid.body":"It is damaged or incomplete. Ask the studio to send the form again.","fill.invalid.title":"This link doesn't work","fill.language":"Language","fill.lastName":"Last name","fill.minor":"You are under 18. A parent or guardian has to come with you and sign at the studio.","fill.missing":"Please fill in the highlighted fields.","fill.optional":"optional","fill.pageTitle":"Client form for {studio}","fill.phone":"Phone","fill.privacy":"What you type stays in your browser. Nothing is sent anywhere until you send it to the studio yourself, and it never passes through Tintaq or any server of ours.","fill.progress":"Step {n} of {total}","fill.qr.caption":"Or let the studio scan this code.","fill.qr.tooLong":"Your answers are too long for a QR code. Please use Send.","fill.send":"Send to the studio","fill.sendTitle":"My answers for {studio}","fill.signLater":"You sign at the studio, once the design and the placement are agreed.","fill.start":"Start","fill.step.1":"About you","fill.step.2":"Health","fill.step.3":"Check and send","health.answer.no":"No","health.answer.unsure":"Not sure","health.answer.yes":"Yes","health.detail":"Please give details","health.q.allergies":"Do you have any allergies?","health.q.ateToday":"Have you eaten in the last few hours?","health.q.bloodborne":"Do you have a bloodborne infection you should tell us about?","health.q.conditions":"Do you have any medical conditions? (heart, diabetes, epilepsy)","health.q.influence":"Have you had alcohol or drugs in the last 24 hours?","health.q.inkReaction":"Have you ever reacted to ink, latex or antiseptics?","health.q.medication":"Are you taking any medication, including blood thinners?","health.q.pregnant":"Are you pregnant or breastfeeding?","health.q.skinCondition":"Any skin condition, mole or scar on the area?","reply.body":"This link holds a client's answers for a studio that uses Tintaq. Open it on the iPhone or iPad where Tintaq is installed.","reply.get":"Get Tintaq","reply.note":"This page shows nothing: only the app reads the answers.","reply.open":"Open in Tintaq","reply.title":"Open this in Tintaq"},"de":{"common.back":"Zurück","common.continue":"Weiter","fill.birth":"Geburtsdatum","fill.check.title":"Antworten prüfen","fill.copied":"Link kopiert","fill.copy":"Link kopieren","fill.done.body":"Schick sie an {studio} oder zeig den Code unten, wenn du ankommst. Sie haben dein Handy noch nicht verlassen.","fill.done.title":"Deine Antworten sind bereit","fill.edit":"Antworten ändern","fill.email":"E-Mail","fill.firstName":"Vorname","fill.footer":"Gemacht mit Tintaq, einer App für Tattoo- und Piercing-Studios.","fill.footer.link":"Tintaq laden","fill.health.intro":"Bitte ehrlich antworten. Das Studio liest deine Antworten vor dem Start, und es schützt dich.","fill.hello":"Vor deinem Besuch bei {studio}","fill.intro":"Trag deine Angaben und ein paar Gesundheitsfragen jetzt ein, damit niemand sie am Tresen abtippen muss. Das dauert etwa zwei Minuten.","fill.invalid.body":"Er ist beschädigt oder unvollständig. Bitte das Studio, das Formular erneut zu schicken.","fill.invalid.title":"Dieser Link funktioniert nicht","fill.language":"Sprache","fill.lastName":"Nachname","fill.minor":"Du bist unter 18. Ein Elternteil oder eine erziehungsberechtigte Person muss mitkommen und im Studio unterschreiben.","fill.missing":"Bitte füll die markierten Felder aus.","fill.optional":"optional","fill.pageTitle":"Kundenformular für {studio}","fill.phone":"Telefon","fill.privacy":"Was du eingibst, bleibt in deinem Browser. Nichts wird verschickt, bis du es selbst an das Studio schickst, und es läuft weder über Tintaq noch über einen Server von uns.","fill.progress":"Schritt {n} von {total}","fill.qr.caption":"Oder lass das Studio diesen Code scannen.","fill.qr.tooLong":"Deine Antworten sind für einen QR-Code zu lang. Bitte nutze „Senden“.","fill.send":"An das Studio senden","fill.sendTitle":"Meine Antworten für {studio}","fill.signLater":"Unterschreiben tust du im Studio, sobald Motiv und Stelle feststehen.","fill.start":"Los geht's","fill.step.1":"Über dich","fill.step.2":"Gesundheit","fill.step.3":"Prüfen und senden","health.answer.no":"Nein","health.answer.unsure":"Unsicher","health.answer.yes":"Ja","health.detail":"Bitte Details angeben","health.q.allergies":"Hast du Allergien?","health.q.ateToday":"Hast du in den letzten Stunden gegessen?","health.q.bloodborne":"Hast du eine durch Blut übertragbare Infektion, von der wir wissen sollten?","health.q.conditions":"Hast du Vorerkrankungen? (Herz, Diabetes, Epilepsie)","health.q.influence":"Hattest du in den letzten 24 Stunden Alkohol oder Drogen?","health.q.inkReaction":"Hattest du je eine Reaktion auf Farbe, Latex oder Desinfektionsmittel?","health.q.medication":"Nimmst du Medikamente, auch Blutverdünner?","health.q.pregnant":"Bist du schwanger oder stillst du?","health.q.skinCondition":"Hautprobleme, Muttermal oder Narbe an der Stelle?","reply.body":"Dieser Link enthält die Antworten eines Kunden für ein Studio, das Tintaq nutzt. Öffne ihn auf dem iPhone oder iPad, auf dem Tintaq installiert ist.","reply.get":"Tintaq laden","reply.note":"Diese Seite zeigt nichts an: Nur die App liest die Antworten.","reply.open":"In Tintaq öffnen","reply.title":"In Tintaq öffnen"},"es":{"common.back":"Atrás","common.continue":"Continuar","fill.birth":"Fecha de nacimiento","fill.check.title":"Revisa tus respuestas","fill.copied":"Enlace copiado","fill.copy":"Copiar enlace","fill.done.body":"Envíaselas a {studio}, o enseña el código de abajo cuando llegues. Todavía no han salido de tu móvil.","fill.done.title":"Tus respuestas están listas","fill.edit":"Cambiar mis respuestas","fill.email":"Correo electrónico","fill.firstName":"Nombre","fill.footer":"Hecho con Tintaq, una app para estudios de tatuaje y piercing.","fill.footer.link":"Descargar Tintaq","fill.health.intro":"Responde con sinceridad. El estudio lee tus respuestas antes de empezar, y es por tu seguridad.","fill.hello":"Antes de tu visita a {studio}","fill.intro":"Rellena ahora tus datos y unas preguntas de salud, para que nadie tenga que teclearlos en el mostrador. Lleva unos dos minutos.","fill.invalid.body":"Está dañado o incompleto. Pide al estudio que te envíe el formulario otra vez.","fill.invalid.title":"Este enlace no funciona","fill.language":"Idioma","fill.lastName":"Apellidos","fill.minor":"Eres menor de 18 años. Tu madre, padre o tutor debe acompañarte y firmar en el estudio.","fill.missing":"Rellena los campos marcados.","fill.optional":"opcional","fill.pageTitle":"Formulario del cliente para {studio}","fill.phone":"Teléfono","fill.privacy":"Lo que escribas se queda en tu navegador. No se envía a ningún sitio hasta que tú se lo mandes al estudio, y nunca pasa por Tintaq ni por ningún servidor nuestro.","fill.progress":"Paso {n} de {total}","fill.qr.caption":"O deja que el estudio escanee este código.","fill.qr.tooLong":"Tus respuestas son demasiado largas para un código QR. Usa «Enviar».","fill.send":"Enviar al estudio","fill.sendTitle":"Mis respuestas para {studio}","fill.signLater":"Firmarás en el estudio, cuando el diseño y la zona estén acordados.","fill.start":"Empezar","fill.step.1":"Sobre ti","fill.step.2":"Salud","fill.step.3":"Revisar y enviar","health.answer.no":"No","health.answer.unsure":"No estoy seguro","health.answer.yes":"Sí","health.detail":"Indica los detalles","health.q.allergies":"¿Tienes alergias?","health.q.ateToday":"¿Has comido en las últimas horas?","health.q.bloodborne":"¿Tienes alguna infección de transmisión sanguínea que debamos saber?","health.q.conditions":"¿Tienes alguna enfermedad? (corazón, diabetes, epilepsia)","health.q.influence":"¿Has tomado alcohol o drogas en las últimas 24 horas?","health.q.inkReaction":"¿Has reaccionado alguna vez a tintas, látex o antisépticos?","health.q.medication":"¿Tomas algún medicamento, incluidos anticoagulantes?","health.q.pregnant":"¿Estás embarazada o en periodo de lactancia?","health.q.skinCondition":"¿Alguna afección de la piel, lunar o cicatriz en la zona?","reply.body":"Este enlace contiene las respuestas de un cliente para un estudio que usa Tintaq. Ábrelo en el iPhone o iPad donde esté instalado Tintaq.","reply.get":"Descargar Tintaq","reply.note":"Esta página no muestra nada: solo la app lee las respuestas.","reply.open":"Abrir en Tintaq","reply.title":"Ábrelo en Tintaq"},"fr":{"common.back":"Retour","common.continue":"Continuer","fill.birth":"Date de naissance","fill.check.title":"Vérifiez vos réponses","fill.copied":"Lien copié","fill.copy":"Copier le lien","fill.done.body":"Envoyez-les à {studio}, ou montrez le code ci-dessous en arrivant. Elles n'ont pas encore quitté votre téléphone.","fill.done.title":"Vos réponses sont prêtes","fill.edit":"Modifier mes réponses","fill.email":"E-mail","fill.firstName":"Prénom","fill.footer":"Créé avec Tintaq, une app pour les studios de tatouage et de piercing.","fill.footer.link":"Télécharger Tintaq","fill.health.intro":"Répondez honnêtement. Le studio lit vos réponses avant de commencer, et c'est pour votre sécurité.","fill.hello":"Avant votre visite chez {studio}","fill.intro":"Renseignez dès maintenant vos coordonnées et quelques questions de santé, pour que personne n'ait à les saisir au comptoir. Cela prend environ deux minutes.","fill.invalid.body":"Il est endommagé ou incomplet. Demandez au studio de vous renvoyer le formulaire.","fill.invalid.title":"Ce lien ne fonctionne pas","fill.language":"Langue","fill.lastName":"Nom","fill.minor":"Vous avez moins de 18 ans. Un parent ou un représentant légal doit venir avec vous et signer au studio.","fill.missing":"Merci de remplir les champs signalés.","fill.optional":"facultatif","fill.pageTitle":"Formulaire client pour {studio}","fill.phone":"Téléphone","fill.privacy":"Ce que vous saisissez reste dans votre navigateur. Rien n'est envoyé tant que vous ne l'envoyez pas vous-même au studio, et cela ne passe jamais par Tintaq ni par un de nos serveurs.","fill.progress":"Étape {n} sur {total}","fill.qr.caption":"Ou laissez le studio scanner ce code.","fill.qr.tooLong":"Vos réponses sont trop longues pour un code QR. Utilisez « Envoyer ».","fill.send":"Envoyer au studio","fill.sendTitle":"Mes réponses pour {studio}","fill.signLater":"Vous signerez au studio, une fois le dessin et l'emplacement arrêtés.","fill.start":"Commencer","fill.step.1":"À propos de vous","fill.step.2":"Santé","fill.step.3":"Vérifier et envoyer","health.answer.no":"Non","health.answer.unsure":"Je ne sais pas","health.answer.yes":"Oui","health.detail":"Merci de préciser","health.q.allergies":"Avez-vous des allergies ?","health.q.ateToday":"Avez-vous mangé ces dernières heures ?","health.q.bloodborne":"Avez-vous une infection transmissible par le sang dont vous devriez nous parler ?","health.q.conditions":"Avez-vous des problèmes de santé ? (cœur, diabète, épilepsie)","health.q.influence":"Avez-vous consommé de l'alcool ou des drogues ces dernières 24 heures ?","health.q.inkReaction":"Avez-vous déjà réagi à l'encre, au latex ou aux antiseptiques ?","health.q.medication":"Prenez-vous des médicaments, y compris des anticoagulants ?","health.q.pregnant":"Êtes-vous enceinte ou allaitez-vous ?","health.q.skinCondition":"Un problème de peau, un grain de beauté ou une cicatrice sur la zone ?","reply.body":"Ce lien contient les réponses d'un client pour un studio qui utilise Tintaq. Ouvrez-le sur l'iPhone ou l'iPad où Tintaq est installé.","reply.get":"Télécharger Tintaq","reply.note":"Cette page n'affiche rien : seule l'app lit les réponses.","reply.open":"Ouvrir dans Tintaq","reply.title":"Ouvrir dans Tintaq"},"it":{"common.back":"Indietro","common.continue":"Continua","fill.birth":"Data di nascita","fill.check.title":"Controlla le risposte","fill.copied":"Link copiato","fill.copy":"Copia il link","fill.done.body":"Mandale a {studio}, oppure mostra il codice qui sotto quando arrivi. Non sono ancora uscite dal tuo telefono.","fill.done.title":"Le tue risposte sono pronte","fill.edit":"Modifica le mie risposte","fill.email":"Email","fill.firstName":"Nome","fill.footer":"Creato con Tintaq, un'app per studi di tatuaggi e piercing.","fill.footer.link":"Scarica Tintaq","fill.health.intro":"Rispondi con sincerità. Lo studio legge le tue risposte prima di iniziare, ed è per la tua sicurezza.","fill.hello":"Prima della tua visita da {studio}","fill.intro":"Inserisci ora i tuoi dati e qualche domanda sulla salute, così nessuno deve ricopiarli al banco. Ci vogliono circa due minuti.","fill.invalid.body":"È danneggiato o incompleto. Chiedi allo studio di mandarti di nuovo il modulo.","fill.invalid.title":"Questo link non funziona","fill.language":"Lingua","fill.lastName":"Cognome","fill.minor":"Hai meno di 18 anni. Un genitore o un tutore deve venire con te e firmare in studio.","fill.missing":"Compila i campi evidenziati.","fill.optional":"facoltativo","fill.pageTitle":"Modulo cliente per {studio}","fill.phone":"Telefono","fill.privacy":"Quello che scrivi resta nel tuo browser. Non viene inviato a nessuno finché non lo mandi tu allo studio, e non passa mai da Tintaq né da un nostro server.","fill.progress":"Passo {n} di {total}","fill.qr.caption":"Oppure fai scansionare questo codice allo studio.","fill.qr.tooLong":"Le tue risposte sono troppo lunghe per un codice QR. Usa «Invia».","fill.send":"Invia allo studio","fill.sendTitle":"Le mie risposte per {studio}","fill.signLater":"Firmerai in studio, quando disegno e zona sono stabiliti.","fill.start":"Inizia","fill.step.1":"Su di te","fill.step.2":"Salute","fill.step.3":"Controlla e invia","health.answer.no":"No","health.answer.unsure":"Non so","health.answer.yes":"Sì","health.detail":"Indica i dettagli","health.q.allergies":"Hai allergie?","health.q.ateToday":"Hai mangiato nelle ultime ore?","health.q.bloodborne":"Hai un'infezione trasmissibile per via ematica di cui dovremmo sapere?","health.q.conditions":"Hai patologie? (cuore, diabete, epilessia)","health.q.influence":"Hai assunto alcol o droghe nelle ultime 24 ore?","health.q.inkReaction":"Hai mai avuto reazioni a inchiostri, lattice o antisettici?","health.q.medication":"Assumi farmaci, inclusi anticoagulanti?","health.q.pregnant":"Sei incinta o stai allattando?","health.q.skinCondition":"Problemi della pelle, nei o cicatrici nella zona?","reply.body":"Questo link contiene le risposte di un cliente per uno studio che usa Tintaq. Aprilo sull'iPhone o sull'iPad dove è installato Tintaq.","reply.get":"Scarica Tintaq","reply.note":"Questa pagina non mostra nulla: solo l'app legge le risposte.","reply.open":"Apri in Tintaq","reply.title":"Aprilo in Tintaq"},"nl":{"common.back":"Terug","common.continue":"Ga door","fill.birth":"Geboortedatum","fill.check.title":"Controleer je antwoorden","fill.copied":"Link gekopieerd","fill.copy":"Link kopiëren","fill.done.body":"Stuur ze naar {studio}, of laat de code hieronder zien als je aankomt. Ze hebben je telefoon nog niet verlaten.","fill.done.title":"Je antwoorden zijn klaar","fill.edit":"Mijn antwoorden wijzigen","fill.email":"E-mail","fill.firstName":"Voornaam","fill.footer":"Gemaakt met Tintaq, een app voor tattoo- en piercingstudio's.","fill.footer.link":"Tintaq downloaden","fill.health.intro":"Antwoord eerlijk. De studio leest je antwoorden voor ze beginnen, en het houdt je veilig.","fill.hello":"Vóór je bezoek aan {studio}","fill.intro":"Vul nu je gegevens en een paar gezondheidsvragen in, dan hoeft niemand ze aan de balie over te typen. Dat duurt zo'n twee minuten.","fill.invalid.body":"Hij is beschadigd of onvolledig. Vraag de studio het formulier opnieuw te sturen.","fill.invalid.title":"Deze link werkt niet","fill.language":"Taal","fill.lastName":"Achternaam","fill.minor":"Je bent jonger dan 18. Een ouder of voogd moet met je meekomen en in de studio tekenen.","fill.missing":"Vul de gemarkeerde velden in.","fill.optional":"optioneel","fill.pageTitle":"Klantformulier voor {studio}","fill.phone":"Telefoon","fill.privacy":"Wat je invult blijft in je browser. Er wordt niets verstuurd tot je het zelf naar de studio stuurt, en het gaat nooit via Tintaq of een server van ons.","fill.progress":"Stap {n} van {total}","fill.qr.caption":"Of laat de studio deze code scannen.","fill.qr.tooLong":"Je antwoorden zijn te lang voor een QR-code. Gebruik „Sturen”.","fill.send":"Naar de studio sturen","fill.sendTitle":"Mijn antwoorden voor {studio}","fill.signLater":"Je tekent in de studio, zodra het ontwerp en de plek vaststaan.","fill.start":"Beginnen","fill.step.1":"Over jou","fill.step.2":"Gezondheid","fill.step.3":"Controleren en sturen","health.answer.no":"Nee","health.answer.unsure":"Weet ik niet","health.answer.yes":"Ja","health.detail":"Geef wat meer uitleg","health.q.allergies":"Heb je allergieën?","health.q.ateToday":"Heb je de afgelopen uren gegeten?","health.q.bloodborne":"Heb je een via bloed overdraagbare infectie die we moeten weten?","health.q.conditions":"Heb je medische aandoeningen? (hart, diabetes, epilepsie)","health.q.influence":"Heb je in de afgelopen 24 uur alcohol of drugs gebruikt?","health.q.inkReaction":"Heb je ooit gereageerd op inkt, latex of ontsmettingsmiddelen?","health.q.medication":"Gebruik je medicijnen, ook bloedverdunners?","health.q.pregnant":"Ben je zwanger of geef je borstvoeding?","health.q.skinCondition":"Een huidaandoening, moedervlek of litteken op de plek?","reply.body":"Deze link bevat de antwoorden van een klant voor een studio die Tintaq gebruikt. Open hem op de iPhone of iPad waarop Tintaq staat.","reply.get":"Tintaq downloaden","reply.note":"Deze pagina toont niets: alleen de app leest de antwoorden.","reply.open":"Openen in Tintaq","reply.title":"Open dit in Tintaq"},"pl":{"common.back":"Wstecz","common.continue":"Dalej","fill.birth":"Data urodzenia","fill.check.title":"Sprawdź odpowiedzi","fill.copied":"Skopiowano link","fill.copy":"Kopiuj link","fill.done.body":"Wyślij je do {studio} albo pokaż kod poniżej po przyjściu. Nie opuściły jeszcze twojego telefonu.","fill.done.title":"Twoje odpowiedzi są gotowe","fill.edit":"Zmień moje odpowiedzi","fill.email":"E-mail","fill.firstName":"Imię","fill.footer":"Stworzone w Tintaq, aplikacji dla studiów tatuażu i piercingu.","fill.footer.link":"Pobierz Tintaq","fill.health.intro":"Odpowiadaj szczerze. Studio czyta twoje odpowiedzi przed rozpoczęciem, a to dla twojego bezpieczeństwa.","fill.hello":"Przed wizytą w {studio}","fill.intro":"Wpisz teraz swoje dane i kilka pytań o zdrowie, żeby nikt nie musiał ich przepisywać przy ladzie. To zajmie około dwóch minut.","fill.invalid.body":"Jest uszkodzony lub niepełny. Poproś studio o ponowne wysłanie formularza.","fill.invalid.title":"Ten link nie działa","fill.language":"Język","fill.lastName":"Nazwisko","fill.minor":"Masz mniej niż 18 lat. Rodzic lub opiekun musi przyjść z tobą i podpisać w studiu.","fill.missing":"Uzupełnij zaznaczone pola.","fill.optional":"opcjonalnie","fill.pageTitle":"Formularz klienta dla {studio}","fill.phone":"Telefon","fill.privacy":"To, co wpiszesz, zostaje w twojej przeglądarce. Nic nie jest wysyłane, dopóki sam nie wyślesz tego do studia, i nigdy nie przechodzi przez Tintaq ani nasz serwer.","fill.progress":"Krok {n} z {total}","fill.qr.caption":"Albo pozwól studiu zeskanować ten kod.","fill.qr.tooLong":"Twoje odpowiedzi są za długie na kod QR. Użyj „Wyślij”.","fill.send":"Wyślij do studia","fill.sendTitle":"Moje odpowiedzi dla {studio}","fill.signLater":"Podpiszesz w studiu, gdy projekt i miejsce będą ustalone.","fill.start":"Zaczynamy","fill.step.1":"O tobie","fill.step.2":"Zdrowie","fill.step.3":"Sprawdź i wyślij","health.answer.no":"Nie","health.answer.unsure":"Nie wiem","health.answer.yes":"Tak","health.detail":"Podaj szczegóły","health.q.allergies":"Czy masz alergie?","health.q.ateToday":"Czy jadłeś coś w ciągu ostatnich godzin?","health.q.bloodborne":"Czy masz zakażenie przenoszone przez krew, o którym powinniśmy wiedzieć?","health.q.conditions":"Czy masz choroby przewlekłe? (serce, cukrzyca, padaczka)","health.q.influence":"Czy w ciągu ostatnich 24 godzin piłeś alkohol lub brałeś środki odurzające?","health.q.inkReaction":"Czy miałeś kiedyś reakcję na tusz, lateks lub środki odkażające?","health.q.medication":"Czy przyjmujesz leki, w tym rozrzedzające krew?","health.q.pregnant":"Czy jesteś w ciąży lub karmisz piersią?","health.q.skinCondition":"Zmiany skórne, pieprzyk lub blizna w tym miejscu?","reply.body":"Ten link zawiera odpowiedzi klienta dla studia korzystającego z Tintaq. Otwórz go na iPhonie lub iPadzie, na którym jest zainstalowany Tintaq.","reply.get":"Pobierz Tintaq","reply.note":"Ta strona niczego nie pokazuje: odpowiedzi czyta tylko aplikacja.","reply.open":"Otwórz w Tintaq","reply.title":"Otwórz w Tintaq"},"pt-BR":{"common.back":"Voltar","common.continue":"Continuar","fill.birth":"Data de nascimento","fill.check.title":"Confira suas respostas","fill.copied":"Link copiado","fill.copy":"Copiar link","fill.done.body":"Envie para {studio}, ou mostre o código abaixo quando chegar. Elas ainda não saíram do seu celular.","fill.done.title":"Suas respostas estão prontas","fill.edit":"Alterar minhas respostas","fill.email":"E-mail","fill.firstName":"Nome","fill.footer":"Feito com o Tintaq, um app para estúdios de tatuagem e piercing.","fill.footer.link":"Baixar o Tintaq","fill.health.intro":"Responda com sinceridade. O estúdio lê suas respostas antes de começar, e é para a sua segurança.","fill.hello":"Antes da sua visita a {studio}","fill.intro":"Preencha agora seus dados e algumas perguntas de saúde, para que ninguém precise digitar tudo no balcão. Leva cerca de dois minutos.","fill.invalid.body":"Ele está danificado ou incompleto. Peça ao estúdio para enviar o termo de novo.","fill.invalid.title":"Este link não funciona","fill.language":"Idioma","fill.lastName":"Sobrenome","fill.minor":"Você tem menos de 18 anos. Um pai, mãe ou responsável precisa ir com você e assinar no estúdio.","fill.missing":"Preencha os campos destacados.","fill.optional":"opcional","fill.pageTitle":"Ficha do cliente para {studio}","fill.phone":"Telefone","fill.privacy":"O que você digita fica no seu navegador. Nada é enviado até você mesmo enviar ao estúdio, e nunca passa pelo Tintaq nem por um servidor nosso.","fill.progress":"Etapa {n} de {total}","fill.qr.caption":"Ou deixe o estúdio escanear este código.","fill.qr.tooLong":"Suas respostas são longas demais para um QR code. Use “Enviar”.","fill.send":"Enviar ao estúdio","fill.sendTitle":"Minhas respostas para {studio}","fill.signLater":"Você assina no estúdio, depois de definidos o desenho e o local.","fill.start":"Começar","fill.step.1":"Sobre você","fill.step.2":"Saúde","fill.step.3":"Conferir e enviar","health.answer.no":"Não","health.answer.unsure":"Não sei","health.answer.yes":"Sim","health.detail":"Dê mais detalhes","health.q.allergies":"Você tem alguma alergia?","health.q.ateToday":"Você comeu nas últimas horas?","health.q.bloodborne":"Você tem alguma infecção transmitida pelo sangue que deveria nos contar?","health.q.conditions":"Você tem algum problema de saúde? (coração, diabetes, epilepsia)","health.q.influence":"Você consumiu álcool ou drogas nas últimas 24 horas?","health.q.inkReaction":"Você já teve reação a tinta, látex ou antissépticos?","health.q.medication":"Você toma algum medicamento, incluindo anticoagulantes?","health.q.pregnant":"Você está grávida ou amamentando?","health.q.skinCondition":"Algum problema de pele, pinta ou cicatriz na área?","reply.body":"Este link tem as respostas de um cliente para um estúdio que usa o Tintaq. Abra no iPhone ou iPad em que o Tintaq está instalado.","reply.get":"Baixar o Tintaq","reply.note":"Esta página não mostra nada: só o app lê as respostas.","reply.open":"Abrir no Tintaq","reply.title":"Abra no Tintaq"},"sv":{"common.back":"Tillbaka","common.continue":"Fortsätt","fill.birth":"Födelsedatum","fill.check.title":"Kontrollera dina svar","fill.copied":"Länk kopierad","fill.copy":"Kopiera länk","fill.done.body":"Skicka dem till {studio}, eller visa koden nedan när du kommer. De har inte lämnat din telefon ännu.","fill.done.title":"Dina svar är klara","fill.edit":"Ändra mina svar","fill.email":"E-post","fill.firstName":"Förnamn","fill.footer":"Gjort med Tintaq, en app för tatuerings- och piercingstudior.","fill.footer.link":"Hämta Tintaq","fill.health.intro":"Svara ärligt. Studion läser dina svar innan de börjar, och det håller dig säker.","fill.hello":"Inför ditt besök hos {studio}","fill.intro":"Fyll i dina uppgifter och några hälsofrågor nu, så slipper ingen skriva in dem i receptionen. Det tar ungefär två minuter.","fill.invalid.body":"Den är skadad eller ofullständig. Be studion skicka formuläret igen.","fill.invalid.title":"Den här länken fungerar inte","fill.language":"Språk","fill.lastName":"Efternamn","fill.minor":"Du är under 18. En förälder eller vårdnadshavare måste följa med och skriva under i studion.","fill.missing":"Fyll i de markerade fälten.","fill.optional":"valfritt","fill.pageTitle":"Kundformulär för {studio}","fill.phone":"Telefon","fill.privacy":"Det du skriver stannar i din webbläsare. Ingenting skickas någonstans förrän du själv skickar det till studion, och det går aldrig via Tintaq eller någon server hos oss.","fill.progress":"Steg {n} av {total}","fill.qr.caption":"Eller låt studion skanna den här koden.","fill.qr.tooLong":"Dina svar är för långa för en QR-kod. Använd Skicka.","fill.send":"Skicka till studion","fill.sendTitle":"Mina svar till {studio}","fill.signLater":"Du skriver under i studion, när motiv och placering är bestämda.","fill.start":"Starta","fill.step.1":"Om dig","fill.step.2":"Hälsa","fill.step.3":"Kontrollera och skicka","health.answer.no":"Nej","health.answer.unsure":"Osäker","health.answer.yes":"Ja","health.detail":"Ange närmare uppgifter","health.q.allergies":"Har du några allergier?","health.q.ateToday":"Har du ätit under de senaste timmarna?","health.q.bloodborne":"Har du en blodburen infektion som vi bör känna till?","health.q.conditions":"Har du några medicinska tillstånd? (hjärta, diabetes, epilepsi)","health.q.influence":"Har du druckit alkohol eller tagit droger de senaste 24 timmarna?","health.q.inkReaction":"Har du någon gång reagerat på bläck, latex eller antiseptika?","health.q.medication":"Tar du någon medicin, inklusive blodförtunnande?","health.q.pregnant":"Är du gravid eller ammar du?","health.q.skinCondition":"Något hudtillstånd, födelsemärke eller ärr på området?","reply.body":"Den här länken innehåller en kunds svar till en studio som använder Tintaq. Öppna den på den iPhone eller iPad där Tintaq är installerat.","reply.get":"Hämta Tintaq","reply.note":"Den här sidan visar ingenting: bara appen läser svaren.","reply.open":"Öppna i Tintaq","reply.title":"Öppna i Tintaq"},"tr":{"common.back":"Geri","common.continue":"Devam","fill.birth":"Doğum tarihi","fill.check.title":"Yanıtlarınızı kontrol edin","fill.copied":"Bağlantı kopyalandı","fill.copy":"Bağlantıyı kopyala","fill.done.body":"Bunları {studio} stüdyosuna gönderin ya da geldiğinizde aşağıdaki kodu gösterin. Yanıtlar henüz telefonunuzdan çıkmadı.","fill.done.title":"Yanıtlarınız hazır","fill.edit":"Yanıtlarımı değiştir","fill.email":"E-posta","fill.firstName":"Ad","fill.footer":"Dövme ve piercing stüdyoları için bir uygulama olan Tintaq ile hazırlandı.","fill.footer.link":"Tintaq'ı indir","fill.health.intro":"Lütfen dürüstçe yanıtlayın. Stüdyo başlamadan önce yanıtlarınızı okur ve bu sizin güvenliğiniz içindir.","fill.hello":"{studio} ziyaretinizden önce","fill.intro":"Bilgilerinizi ve birkaç sağlık sorusunu şimdi doldurun; böylece kimsenin bunları tezgâhta yazması gerekmez. Yaklaşık iki dakika sürer.","fill.invalid.body":"Bozuk ya da eksik. Stüdyodan formu yeniden göndermesini isteyin.","fill.invalid.title":"Bu bağlantı çalışmıyor","fill.language":"Dil","fill.lastName":"Soyad","fill.minor":"18 yaşından küçüksünüz. Bir ebeveyn ya da veli sizinle gelip stüdyoda imza atmalı.","fill.missing":"Lütfen işaretli alanları doldurun.","fill.optional":"isteğe bağlı","fill.pageTitle":"{studio} için müşteri formu","fill.phone":"Telefon","fill.privacy":"Yazdıklarınız tarayıcınızda kalır. Siz stüdyoya kendiniz göndermedikçe hiçbir yere gönderilmez ve asla Tintaq'tan ya da bizim bir sunucumuzdan geçmez.","fill.progress":"Adım {n} / {total}","fill.qr.caption":"Ya da stüdyonun bu kodu taramasına izin verin.","fill.qr.tooLong":"Yanıtlarınız QR kodu için çok uzun. Lütfen «Gönder»i kullanın.","fill.send":"Stüdyoya gönder","fill.sendTitle":"{studio} için yanıtlarım","fill.signLater":"İmzayı, tasarım ve bölge kararlaştırıldıktan sonra stüdyoda atacaksınız.","fill.start":"Başla","fill.step.1":"Sizin hakkınızda","fill.step.2":"Sağlık","fill.step.3":"Kontrol et ve gönder","health.answer.no":"Hayır","health.answer.unsure":"Emin değilim","health.answer.yes":"Evet","health.detail":"Lütfen ayrıntı verin","health.q.allergies":"Herhangi bir alerjiniz var mı?","health.q.ateToday":"Son birkaç saatte bir şey yediniz mi?","health.q.bloodborne":"Bize söylemeniz gereken, kanla bulaşan bir enfeksiyonunuz var mı?","health.q.conditions":"Herhangi bir sağlık sorununuz var mı? (kalp, diyabet, epilepsi)","health.q.influence":"Son 24 saatte alkol veya uyuşturucu aldınız mı?","health.q.inkReaction":"Hiç mürekkebe, lateks veya antiseptiklere tepki verdiniz mi?","health.q.medication":"Kan sulandırıcılar dahil herhangi bir ilaç kullanıyor musunuz?","health.q.pregnant":"Hamile misiniz veya emziriyor musunuz?","health.q.skinCondition":"Bölgede bir cilt sorunu, ben veya yara izi var mı?","reply.body":"Bu bağlantı, Tintaq kullanan bir stüdyo için bir müşterinin yanıtlarını içerir. Tintaq'ın yüklü olduğu iPhone ya da iPad'de açın.","reply.get":"Tintaq'ı indir","reply.note":"Bu sayfa hiçbir şey göstermez: yanıtları yalnızca uygulama okur.","reply.open":"Tintaq'ta aç","reply.title":"Tintaq'ta açın"},"ru":{"common.back":"Назад","common.continue":"Продолжить","fill.birth":"Дата рождения","fill.check.title":"Проверьте ответы","fill.copied":"Ссылка скопирована","fill.copy":"Скопировать ссылку","fill.done.body":"Отправьте их в {studio} или покажите код ниже, когда придёте. С вашего телефона они пока никуда не уходили.","fill.done.title":"Ваши ответы готовы","fill.edit":"Изменить ответы","fill.email":"Эл. почта","fill.firstName":"Имя","fill.footer":"Сделано в Tintaq — приложении для тату- и пирсинг-студий.","fill.footer.link":"Скачать Tintaq","fill.health.intro":"Отвечайте честно. Студия прочитает ваши ответы перед началом, и это для вашей безопасности.","fill.hello":"Перед визитом в {studio}","fill.intro":"Заполните свои данные и несколько вопросов о здоровье сейчас, чтобы их не пришлось вбивать за стойкой. Это займёт около двух минут.","fill.invalid.body":"Она повреждена или неполная. Попросите студию отправить форму ещё раз.","fill.invalid.title":"Эта ссылка не работает","fill.language":"Язык","fill.lastName":"Фамилия","fill.minor":"Вам нет 18 лет. Родитель или законный представитель должен прийти с вами и подписать в студии.","fill.missing":"Заполните выделенные поля.","fill.optional":"необязательно","fill.pageTitle":"Анкета клиента для {studio}","fill.phone":"Телефон","fill.privacy":"Всё, что вы вводите, остаётся в вашем браузере. Ничего не отправляется, пока вы сами не отправите это студии, и это никогда не проходит через Tintaq или наши серверы.","fill.progress":"Шаг {n} из {total}","fill.qr.caption":"Или дайте студии отсканировать этот код.","fill.qr.tooLong":"Ответы слишком длинные для QR-кода. Воспользуйтесь отправкой.","fill.send":"Отправить студии","fill.sendTitle":"Мои ответы для {studio}","fill.signLater":"Подписывать вы будете в студии, когда эскиз и место будут согласованы.","fill.start":"Начать","fill.step.1":"О вас","fill.step.2":"Здоровье","fill.step.3":"Проверка и отправка","health.answer.no":"Нет","health.answer.unsure":"Не уверен(а)","health.answer.yes":"Да","health.detail":"Уточните, пожалуйста","health.q.allergies":"Есть ли у вас аллергия?","health.q.ateToday":"Вы ели в последние несколько часов?","health.q.bloodborne":"Есть ли у вас инфекция, передающаяся через кровь, о которой нам стоит знать?","health.q.conditions":"Есть ли у вас заболевания? (сердце, диабет, эпилепсия)","health.q.influence":"Употребляли ли вы алкоголь или наркотики за последние 24 часа?","health.q.inkReaction":"Была ли у вас реакция на краску, латекс или антисептики?","health.q.medication":"Принимаете ли вы лекарства, включая разжижающие кровь?","health.q.pregnant":"Вы беременны или кормите грудью?","health.q.skinCondition":"Есть ли на этом месте кожное заболевание, родинка или шрам?","reply.body":"В этой ссылке ответы клиента для студии, которая работает в Tintaq. Откройте её на iPhone или iPad, где установлен Tintaq.","reply.get":"Скачать Tintaq","reply.note":"Эта страница ничего не показывает: ответы читает только приложение.","reply.open":"Открыть в Tintaq","reply.title":"Откройте в Tintaq"},"uk":{"common.back":"Назад","common.continue":"Продовжити","fill.birth":"Дата народження","fill.check.title":"Перевірте відповіді","fill.copied":"Посилання скопійовано","fill.copy":"Копіювати посилання","fill.done.body":"Надішліть їх до {studio} або покажіть код нижче, коли прийдете. З вашого телефона вони поки нікуди не виходили.","fill.done.title":"Ваші відповіді готові","fill.edit":"Змінити відповіді","fill.email":"Ел. пошта","fill.firstName":"Ім'я","fill.footer":"Створено в Tintaq — застосунку для тату- та пірсинг-студій.","fill.footer.link":"Завантажити Tintaq","fill.health.intro":"Відповідайте чесно. Студія прочитає ваші відповіді перед початком, і це для вашої безпеки.","fill.hello":"Перед візитом до {studio}","fill.intro":"Заповніть свої дані та кілька запитань про здоров'я зараз, щоб їх не довелося вводити за стійкою. Це займе приблизно дві хвилини.","fill.invalid.body":"Воно пошкоджене або неповне. Попросіть студію надіслати форму ще раз.","fill.invalid.title":"Це посилання не працює","fill.language":"Мова","fill.lastName":"Прізвище","fill.minor":"Вам немає 18 років. Батько/мати або законний представник має прийти з вами та підписати в студії.","fill.missing":"Заповніть виділені поля.","fill.optional":"необов'язково","fill.pageTitle":"Анкета клієнта для {studio}","fill.phone":"Телефон","fill.privacy":"Усе, що ви вводите, залишається у вашому браузері. Нічого не надсилається, доки ви самі не надішлете це студії, і це ніколи не проходить через Tintaq чи наші сервери.","fill.progress":"Крок {n} з {total}","fill.qr.caption":"Або дайте студії відсканувати цей код.","fill.qr.tooLong":"Відповіді надто довгі для QR-коду. Скористайтеся надсиланням.","fill.send":"Надіслати студії","fill.sendTitle":"Мої відповіді для {studio}","fill.signLater":"Підписувати ви будете в студії, коли ескіз і місце буде узгоджено.","fill.start":"Почати","fill.step.1":"Про вас","fill.step.2":"Здоров'я","fill.step.3":"Перевірка й надсилання","health.answer.no":"Ні","health.answer.unsure":"Не впевнений(а)","health.answer.yes":"Так","health.detail":"Уточніть, будь ласка","health.q.allergies":"Чи є у вас алергії?","health.q.ateToday":"Чи їли ви протягом останніх кількох годин?","health.q.bloodborne":"Чи є у вас інфекція, що передається через кров, про яку нам слід знати?","health.q.conditions":"Чи є у вас захворювання? (серце, діабет, епілепсія)","health.q.influence":"Чи вживали ви алкоголь або наркотики протягом останніх 24 годин?","health.q.inkReaction":"Чи була у вас колись реакція на фарбу, латекс або антисептики?","health.q.medication":"Чи приймаєте ви ліки, зокрема ті, що розріджують кров?","health.q.pregnant":"Чи ви вагітні або годуєте груддю?","health.q.skinCondition":"Чи є на цій ділянці шкірні проблеми, родимка або шрам?","reply.body":"У цьому посиланні — відповіді клієнта для студії, яка працює в Tintaq. Відкрийте його на iPhone або iPad, де встановлено Tintaq.","reply.get":"Завантажити Tintaq","reply.note":"Ця сторінка нічого не показує: відповіді читає лише застосунок.","reply.open":"Відкрити в Tintaq","reply.title":"Відкрийте в Tintaq"},"id":{"common.back":"Kembali","common.continue":"Lanjutkan","fill.birth":"Tanggal lahir","fill.check.title":"Periksa jawaban Anda","fill.copied":"Tautan disalin","fill.copy":"Salin tautan","fill.done.body":"Kirim ke {studio}, atau tunjukkan kode di bawah saat Anda tiba. Jawaban belum keluar dari ponsel Anda.","fill.done.title":"Jawaban Anda siap","fill.edit":"Ubah jawaban saya","fill.email":"Email","fill.firstName":"Nama depan","fill.footer":"Dibuat dengan Tintaq, aplikasi untuk studio tato dan piercing.","fill.footer.link":"Dapatkan Tintaq","fill.health.intro":"Jawablah dengan jujur. Studio membaca jawaban Anda sebelum mulai, dan ini menjaga keselamatan Anda.","fill.hello":"Sebelum kunjungan Anda ke {studio}","fill.intro":"Isi data diri dan beberapa pertanyaan kesehatan sekarang, agar tidak ada yang perlu mengetiknya di meja. Butuh sekitar dua menit.","fill.invalid.body":"Tautannya rusak atau tidak lengkap. Minta studio mengirim formulirnya lagi.","fill.invalid.title":"Tautan ini tidak berfungsi","fill.language":"Bahasa","fill.lastName":"Nama belakang","fill.minor":"Usia Anda di bawah 18 tahun. Orang tua atau wali harus ikut dan menandatangani di studio.","fill.missing":"Mohon isi kolom yang disorot.","fill.optional":"opsional","fill.pageTitle":"Formulir klien untuk {studio}","fill.phone":"Telepon","fill.privacy":"Apa yang Anda ketik tetap di peramban Anda. Tidak ada yang dikirim ke mana pun sampai Anda sendiri mengirimkannya ke studio, dan tidak pernah melewati Tintaq atau server kami.","fill.progress":"Langkah {n} dari {total}","fill.qr.caption":"Atau biarkan studio memindai kode ini.","fill.qr.tooLong":"Jawaban Anda terlalu panjang untuk kode QR. Gunakan Kirim.","fill.send":"Kirim ke studio","fill.sendTitle":"Jawaban saya untuk {studio}","fill.signLater":"Anda menandatangani di studio, setelah desain dan lokasinya disepakati.","fill.start":"Mulai","fill.step.1":"Tentang Anda","fill.step.2":"Kesehatan","fill.step.3":"Periksa dan kirim","health.answer.no":"Tidak","health.answer.unsure":"Tidak yakin","health.answer.yes":"Ya","health.detail":"Mohon beri rincian","health.q.allergies":"Apakah Anda punya alergi?","health.q.ateToday":"Apakah Anda sudah makan dalam beberapa jam terakhir?","health.q.bloodborne":"Apakah Anda memiliki infeksi menular lewat darah yang perlu kami ketahui?","health.q.conditions":"Apakah Anda punya kondisi medis? (jantung, diabetes, epilepsi)","health.q.influence":"Apakah Anda minum alkohol atau memakai narkoba dalam 24 jam terakhir?","health.q.inkReaction":"Pernahkah Anda bereaksi terhadap tinta, lateks, atau antiseptik?","health.q.medication":"Apakah Anda sedang minum obat, termasuk pengencer darah?","health.q.pregnant":"Apakah Anda sedang hamil atau menyusui?","health.q.skinCondition":"Ada kondisi kulit, tahi lalat, atau bekas luka di area itu?","reply.body":"Tautan ini berisi jawaban klien untuk studio yang memakai Tintaq. Buka di iPhone atau iPad tempat Tintaq terpasang.","reply.get":"Dapatkan Tintaq","reply.note":"Halaman ini tidak menampilkan apa pun: hanya aplikasi yang membaca jawabannya.","reply.open":"Buka di Tintaq","reply.title":"Buka di Tintaq"},"th":{"common.back":"ย้อนกลับ","common.continue":"ต่อไป","fill.birth":"วันเกิด","fill.check.title":"ตรวจสอบคำตอบของคุณ","fill.copied":"คัดลอกลิงก์แล้ว","fill.copy":"คัดลอกลิงก์","fill.done.body":"ส่งให้ {studio} หรือแสดงโค้ดด้านล่างเมื่อมาถึง คำตอบยังไม่ได้ออกจากโทรศัพท์ของคุณ","fill.done.title":"คำตอบของคุณพร้อมแล้ว","fill.edit":"แก้ไขคำตอบของฉัน","fill.email":"อีเมล","fill.firstName":"ชื่อ","fill.footer":"สร้างด้วย Tintaq แอปสำหรับสตูดิโอสักและเจาะ","fill.footer.link":"รับ Tintaq","fill.health.intro":"โปรดตอบตามจริง สตูดิโอจะอ่านคำตอบของคุณก่อนเริ่ม และเพื่อความปลอดภัยของคุณ","fill.hello":"ก่อนมาที่ {studio}","fill.intro":"กรอกข้อมูลของคุณและคำถามด้านสุขภาพสองสามข้อตอนนี้ จะได้ไม่ต้องให้ใครพิมพ์ที่เคาน์เตอร์ ใช้เวลาประมาณสองนาที","fill.invalid.body":"ลิงก์เสียหายหรือไม่สมบูรณ์ ขอให้สตูดิโอส่งแบบฟอร์มมาใหม่","fill.invalid.title":"ลิงก์นี้ใช้ไม่ได้","fill.language":"ภาษา","fill.lastName":"นามสกุล","fill.minor":"คุณอายุต่ำกว่า 18 ปี ผู้ปกครองต้องมากับคุณและลงนามที่สตูดิโอ","fill.missing":"โปรดกรอกช่องที่ไฮไลต์","fill.optional":"ไม่บังคับ","fill.pageTitle":"แบบฟอร์มลูกค้าสำหรับ {studio}","fill.phone":"โทรศัพท์","fill.privacy":"สิ่งที่คุณพิมพ์อยู่ในเบราว์เซอร์ของคุณเท่านั้น จะไม่ถูกส่งไปที่ใดจนกว่าคุณจะส่งให้สตูดิโอเอง และไม่ผ่าน Tintaq หรือเซิร์ฟเวอร์ใดของเรา","fill.progress":"ขั้นตอนที่ {n} จาก {total}","fill.qr.caption":"หรือให้สตูดิโอสแกนโค้ดนี้","fill.qr.tooLong":"คำตอบของคุณยาวเกินไปสำหรับ QR โค้ด โปรดใช้ปุ่มส่ง","fill.send":"ส่งให้สตูดิโอ","fill.sendTitle":"คำตอบของฉันสำหรับ {studio}","fill.signLater":"คุณจะลงนามที่สตูดิโอ หลังจากตกลงลายและตำแหน่งแล้ว","fill.start":"เริ่ม","fill.step.1":"เกี่ยวกับคุณ","fill.step.2":"สุขภาพ","fill.step.3":"ตรวจสอบและส่ง","health.answer.no":"ไม่","health.answer.unsure":"ไม่แน่ใจ","health.answer.yes":"ใช่","health.detail":"โปรดให้รายละเอียด","health.q.allergies":"คุณมีอาการแพ้อะไรหรือไม่","health.q.ateToday":"คุณกินอาหารในช่วงไม่กี่ชั่วโมงที่ผ่านมาหรือไม่","health.q.bloodborne":"คุณมีโรคติดต่อทางเลือดที่เราควรทราบหรือไม่","health.q.conditions":"คุณมีโรคประจำตัวหรือไม่ (หัวใจ เบาหวาน ลมชัก)","health.q.influence":"คุณดื่มแอลกอฮอล์หรือใช้ยาเสพติดในช่วง 24 ชั่วโมงที่ผ่านมาหรือไม่","health.q.inkReaction":"คุณเคยแพ้หมึก ยางลาเท็กซ์ หรือยาฆ่าเชื้อหรือไม่","health.q.medication":"คุณกำลังใช้ยาอะไรอยู่หรือไม่ รวมถึงยาละลายลิ่มเลือด","health.q.pregnant":"คุณกำลังตั้งครรภ์หรือให้นมบุตรหรือไม่","health.q.skinCondition":"บริเวณนั้นมีโรคผิวหนัง ไฝ หรือแผลเป็นหรือไม่","reply.body":"ลิงก์นี้มีคำตอบของลูกค้าสำหรับสตูดิโอที่ใช้ Tintaq เปิดบน iPhone หรือ iPad ที่ติดตั้ง Tintaq","reply.get":"รับ Tintaq","reply.note":"หน้านี้ไม่แสดงอะไร: มีแต่แอปที่อ่านคำตอบได้","reply.open":"เปิดใน Tintaq","reply.title":"เปิดใน Tintaq"},"vi":{"common.back":"Quay lại","common.continue":"Tiếp tục","fill.birth":"Ngày sinh","fill.check.title":"Kiểm tra câu trả lời của bạn","fill.copied":"Đã sao chép liên kết","fill.copy":"Sao chép liên kết","fill.done.body":"Gửi cho {studio}, hoặc đưa mã bên dưới khi bạn đến. Chúng chưa rời khỏi điện thoại của bạn.","fill.done.title":"Câu trả lời của bạn đã sẵn sàng","fill.edit":"Sửa câu trả lời của tôi","fill.email":"Email","fill.firstName":"Tên","fill.footer":"Tạo bằng Tintaq, ứng dụng dành cho studio xăm hình và xỏ khuyên.","fill.footer.link":"Tải Tintaq","fill.health.intro":"Hãy trả lời thành thật. Studio đọc câu trả lời của bạn trước khi bắt đầu, và điều này giữ bạn an toàn.","fill.hello":"Trước buổi hẹn tại {studio}","fill.intro":"Hãy điền thông tin và vài câu hỏi sức khỏe ngay bây giờ, để không ai phải gõ lại ở quầy. Chỉ mất khoảng hai phút.","fill.invalid.body":"Liên kết bị hỏng hoặc không đầy đủ. Hãy nhờ studio gửi lại biểu mẫu.","fill.invalid.title":"Liên kết này không hoạt động","fill.language":"Ngôn ngữ","fill.lastName":"Họ","fill.minor":"Bạn dưới 18 tuổi. Cha mẹ hoặc người giám hộ phải đi cùng bạn và ký tại studio.","fill.missing":"Vui lòng điền các ô được đánh dấu.","fill.optional":"không bắt buộc","fill.pageTitle":"Biểu mẫu khách hàng cho {studio}","fill.phone":"Điện thoại","fill.privacy":"Những gì bạn nhập chỉ nằm trong trình duyệt của bạn. Không có gì được gửi đi cho đến khi chính bạn gửi cho studio, và nó không bao giờ đi qua Tintaq hay bất kỳ máy chủ nào của chúng tôi.","fill.progress":"Bước {n}/{total}","fill.qr.caption":"Hoặc để studio quét mã này.","fill.qr.tooLong":"Câu trả lời của bạn quá dài cho mã QR. Hãy dùng nút Gửi.","fill.send":"Gửi cho studio","fill.sendTitle":"Câu trả lời của tôi cho {studio}","fill.signLater":"Bạn sẽ ký tại studio, sau khi đã thống nhất hình xăm và vị trí.","fill.start":"Bắt đầu","fill.step.1":"Về bạn","fill.step.2":"Sức khỏe","fill.step.3":"Kiểm tra và gửi","health.answer.no":"Không","health.answer.unsure":"Không chắc","health.answer.yes":"Có","health.detail":"Vui lòng cho biết chi tiết","health.q.allergies":"Bạn có bị dị ứng không?","health.q.ateToday":"Bạn đã ăn trong vài giờ qua chưa?","health.q.bloodborne":"Bạn có nhiễm bệnh lây qua đường máu nào mà chúng tôi cần biết không?","health.q.conditions":"Bạn có bệnh lý nào không? (tim, tiểu đường, động kinh)","health.q.influence":"Bạn có uống rượu bia hoặc dùng chất kích thích trong 24 giờ qua không?","health.q.inkReaction":"Bạn đã từng phản ứng với mực, latex hoặc thuốc sát trùng chưa?","health.q.medication":"Bạn có đang dùng thuốc nào, kể cả thuốc làm loãng máu không?","health.q.pregnant":"Bạn có đang mang thai hoặc cho con bú không?","health.q.skinCondition":"Vùng da đó có bệnh da, nốt ruồi hay sẹo nào không?","reply.body":"Liên kết này chứa câu trả lời của một khách hàng gửi cho studio dùng Tintaq. Hãy mở nó trên iPhone hoặc iPad đã cài Tintaq.","reply.get":"Tải Tintaq","reply.note":"Trang này không hiển thị gì: chỉ ứng dụng mới đọc được câu trả lời.","reply.open":"Mở trong Tintaq","reply.title":"Mở trong Tintaq"},"hi":{"common.back":"वापस","common.continue":"जारी रखें","fill.birth":"जन्म तिथि","fill.check.title":"अपने उत्तर जाँचें","fill.copied":"लिंक कॉपी हो गया","fill.copy":"लिंक कॉपी करें","fill.done.body":"इन्हें {studio} को भेजें, या पहुँचने पर नीचे का कोड दिखाएँ। ये अभी आपके फ़ोन से बाहर नहीं गए हैं।","fill.done.title":"आपके उत्तर तैयार हैं","fill.edit":"मेरे उत्तर बदलें","fill.email":"ईमेल","fill.firstName":"पहला नाम","fill.footer":"Tintaq से बनाया गया, टैटू और पियर्सिंग स्टूडियो के लिए ऐप।","fill.footer.link":"Tintaq पाएँ","fill.health.intro":"कृपया ईमानदारी से उत्तर दें। शुरू करने से पहले स्टूडियो आपके उत्तर पढ़ता है, और इससे आप सुरक्षित रहते हैं।","fill.hello":"{studio} में आपकी विज़िट से पहले","fill.intro":"अपनी जानकारी और कुछ स्वास्थ्य प्रश्न अभी भर दें, ताकि काउंटर पर किसी को इन्हें टाइप न करना पड़े। इसमें लगभग दो मिनट लगते हैं।","fill.invalid.body":"यह खराब या अधूरा है। स्टूडियो से फ़ॉर्म फिर से भेजने को कहें।","fill.invalid.title":"यह लिंक काम नहीं करता","fill.language":"भाषा","fill.lastName":"उपनाम","fill.minor":"आपकी आयु 18 से कम है। माता-पिता या अभिभावक को आपके साथ आना होगा और स्टूडियो में हस्ताक्षर करने होंगे।","fill.missing":"कृपया चिह्नित फ़ील्ड भरें।","fill.optional":"वैकल्पिक","fill.pageTitle":"{studio} के लिए ग्राहक फ़ॉर्म","fill.phone":"फ़ोन","fill.privacy":"आप जो टाइप करते हैं वह आपके ब्राउज़र में ही रहता है। जब तक आप खुद इसे स्टूडियो को नहीं भेजते, कुछ भी कहीं नहीं भेजा जाता, और यह कभी Tintaq या हमारे किसी सर्वर से होकर नहीं जाता।","fill.progress":"चरण {n} / {total}","fill.qr.caption":"या स्टूडियो को यह कोड स्कैन करने दें।","fill.qr.tooLong":"आपके उत्तर QR कोड के लिए बहुत लंबे हैं। कृपया भेजें का उपयोग करें।","fill.send":"स्टूडियो को भेजें","fill.sendTitle":"{studio} के लिए मेरे उत्तर","fill.signLater":"हस्ताक्षर आप स्टूडियो में करेंगे, जब डिज़ाइन और जगह तय हो जाए।","fill.start":"शुरू करें","fill.step.1":"आपके बारे में","fill.step.2":"स्वास्थ्य","fill.step.3":"जाँचें और भेजें","health.answer.no":"नहीं","health.answer.unsure":"पक्का नहीं","health.answer.yes":"हाँ","health.detail":"कृपया विवरण दें","health.q.allergies":"क्या आपको कोई एलर्जी है?","health.q.ateToday":"क्या आपने पिछले कुछ घंटों में खाना खाया है?","health.q.bloodborne":"क्या आपको रक्त से फैलने वाला कोई संक्रमण है जिसके बारे में हमें बताना चाहिए?","health.q.conditions":"क्या आपको कोई चिकित्सीय समस्या है? (हृदय, डायबिटीज़, मिर्गी)","health.q.influence":"क्या आपने पिछले 24 घंटों में शराब या नशीले पदार्थ लिए हैं?","health.q.inkReaction":"क्या आपको कभी स्याही, लेटेक्स या एंटीसेप्टिक से प्रतिक्रिया हुई है?","health.q.medication":"क्या आप कोई दवा ले रहे हैं, जिसमें खून पतला करने वाली दवाएँ भी शामिल हैं?","health.q.pregnant":"क्या आप गर्भवती हैं या स्तनपान करा रही हैं?","health.q.skinCondition":"उस जगह पर कोई त्वचा की समस्या, तिल या निशान है?","reply.body":"इस लिंक में Tintaq इस्तेमाल करने वाले स्टूडियो के लिए एक ग्राहक के उत्तर हैं। इसे उस iPhone या iPad पर खोलें जिसमें Tintaq इंस्टॉल है।","reply.get":"Tintaq पाएँ","reply.note":"यह पेज कुछ नहीं दिखाता: उत्तर केवल ऐप पढ़ता है।","reply.open":"Tintaq में खोलें","reply.title":"Tintaq में खोलें"},"ja":{"common.back":"戻る","common.continue":"続ける","fill.birth":"生年月日","fill.check.title":"回答の確認","fill.copied":"リンクをコピーしました","fill.copy":"リンクをコピー","fill.done.body":"{studio}に送信するか、ご来店時に下のコードを見せてください。まだお使いのスマホの外には出ていません。","fill.done.title":"回答の準備ができました","fill.edit":"回答を修正する","fill.email":"メールアドレス","fill.firstName":"名","fill.footer":"タトゥー・ピアススタジオ向けアプリ「Tintaq」で作成されました。","fill.footer.link":"Tintaqを入手","fill.health.intro":"正直にお答えください。施術前にスタジオが回答を確認します。あなたの安全のためです。","fill.hello":"{studio}へのご来店の前に","fill.intro":"お客様情報と健康に関するいくつかの質問を今のうちに入力しておくと、受付で入力する必要がありません。所要時間は約2分です。","fill.invalid.body":"壊れているか、不完全です。スタジオにフォームをもう一度送ってもらってください。","fill.invalid.title":"このリンクは使えません","fill.language":"言語","fill.lastName":"姓","fill.minor":"18歳未満の方です。保護者の方が同伴し、スタジオで署名する必要があります。","fill.missing":"強調表示された項目を入力してください。","fill.optional":"任意","fill.pageTitle":"{studio}のお客様フォーム","fill.phone":"電話番号","fill.privacy":"入力内容はお使いのブラウザの中にだけ残ります。ご自身でスタジオに送るまで、どこにも送信されません。Tintaqや当社のサーバーを経由することもありません。","fill.progress":"ステップ {n} / {total}","fill.qr.caption":"または、このコードをスタジオに読み取ってもらってください。","fill.qr.tooLong":"回答が長すぎてQRコードにできません。「送信」をご利用ください。","fill.send":"スタジオに送信","fill.sendTitle":"{studio}への回答","fill.signLater":"署名は、デザインと部位が決まってから、スタジオで行います。","fill.start":"はじめる","fill.step.1":"ご本人について","fill.step.2":"健康","fill.step.3":"確認して送信","health.answer.no":"いいえ","health.answer.unsure":"分からない","health.answer.yes":"はい","health.detail":"詳しく教えてください","health.q.allergies":"アレルギーはありますか？","health.q.ateToday":"この数時間以内に食事をしましたか？","health.q.bloodborne":"お知らせいただくべき血液感染症はありますか？","health.q.conditions":"持病はありますか？（心臓病、糖尿病、てんかんなど）","health.q.influence":"24時間以内にアルコールや薬物を摂取しましたか？","health.q.inkReaction":"インク、ラテックス、消毒液で反応が出たことはありますか？","health.q.medication":"血液をサラサラにする薬を含め、服用中の薬はありますか？","health.q.pregnant":"妊娠中または授乳中ですか？","health.q.skinCondition":"その部位に皮膚の病気、ほくろ、傷あとはありますか？","reply.body":"このリンクには、Tintaqを使うスタジオ宛てのお客様の回答が入っています。Tintaqをインストールしたデバイスで開いてください。","reply.get":"Tintaqを入手","reply.note":"このページには何も表示されません。回答を読み取れるのはアプリだけです。","reply.open":"Tintaqで開く","reply.title":"Tintaqで開く"},"ko":{"common.back":"뒤로","common.continue":"계속","fill.birth":"생년월일","fill.check.title":"답변 확인","fill.copied":"링크를 복사했습니다","fill.copy":"링크 복사","fill.done.body":"{studio}에 보내거나, 도착했을 때 아래 코드를 보여 주세요. 아직 휴대폰 밖으로 나가지 않았습니다.","fill.done.title":"답변이 준비되었습니다","fill.edit":"답변 수정","fill.email":"이메일","fill.firstName":"이름","fill.footer":"타투·피어싱 스튜디오용 앱 Tintaq로 만들었습니다.","fill.footer.link":"Tintaq 받기","fill.health.intro":"솔직하게 답해 주세요. 시술 전에 스튜디오가 답변을 확인하며, 고객님의 안전을 위한 것입니다.","fill.hello":"{studio} 방문 전에","fill.intro":"인적 사항과 건강 질문 몇 가지를 지금 작성해 두면 접수대에서 입력할 필요가 없습니다. 약 2분이 걸립니다.","fill.invalid.body":"손상되었거나 불완전합니다. 스튜디오에 양식을 다시 보내 달라고 요청하세요.","fill.invalid.title":"이 링크는 작동하지 않습니다","fill.language":"언어","fill.lastName":"성","fill.minor":"만 18세 미만입니다. 보호자가 함께 방문해 스튜디오에서 서명해야 합니다.","fill.missing":"표시된 항목을 작성해 주세요.","fill.optional":"선택","fill.pageTitle":"{studio} 고객 양식","fill.phone":"전화번호","fill.privacy":"입력한 내용은 이 브라우저에만 남습니다. 직접 스튜디오로 보내기 전에는 어디에도 전송되지 않으며, Tintaq나 저희 서버를 거치지도 않습니다.","fill.progress":"{total}단계 중 {n}단계","fill.qr.caption":"또는 스튜디오에서 이 코드를 스캔하게 해 주세요.","fill.qr.tooLong":"답변이 너무 길어 QR 코드로 만들 수 없습니다. ‘보내기’를 사용해 주세요.","fill.send":"스튜디오에 보내기","fill.sendTitle":"{studio}에 보내는 내 답변","fill.signLater":"서명은 도안과 부위가 정해진 뒤 스튜디오에서 하게 됩니다.","fill.start":"시작","fill.step.1":"나에 대해","fill.step.2":"건강","fill.step.3":"확인 후 보내기","health.answer.no":"아니요","health.answer.unsure":"잘 모르겠음","health.answer.yes":"예","health.detail":"자세히 적어 주세요","health.q.allergies":"알레르기가 있나요?","health.q.ateToday":"최근 몇 시간 안에 식사를 했나요?","health.q.bloodborne":"저희가 알아야 할 혈액 매개 감염병이 있나요?","health.q.conditions":"앓고 있는 질환이 있나요? (심장, 당뇨, 뇌전증)","health.q.influence":"최근 24시간 안에 술이나 약물을 섭취했나요?","health.q.inkReaction":"잉크, 라텍스, 소독제에 반응을 보인 적이 있나요?","health.q.medication":"혈액 응고를 막는 약을 포함해 복용 중인 약이 있나요?","health.q.pregnant":"임신 중이거나 모유 수유 중인가요?","health.q.skinCondition":"그 부위에 피부 질환, 점, 흉터가 있나요?","reply.body":"이 링크에는 Tintaq를 쓰는 스튜디오로 보내는 고객의 답변이 들어 있습니다. Tintaq가 설치된 iPhone이나 iPad에서 여세요.","reply.get":"Tintaq 받기","reply.note":"이 페이지에는 아무것도 표시되지 않습니다. 답변은 앱만 읽을 수 있습니다.","reply.open":"Tintaq에서 열기","reply.title":"Tintaq에서 열기"},"zh-Hans":{"common.back":"返回","common.continue":"继续","fill.birth":"出生日期","fill.check.title":"检查您的回答","fill.copied":"链接已复制","fill.copy":"复制链接","fill.done.body":"把它们发送给 {studio}，或到店时出示下方二维码。它们还没有离开您的手机。","fill.done.title":"您的回答已准备好","fill.edit":"修改我的回答","fill.email":"电子邮件","fill.firstName":"名","fill.footer":"由 Tintaq 制作，一款面向纹身和穿孔工作室的应用。","fill.footer.link":"获取 Tintaq","fill.health.intro":"请如实回答。工作室会在开始前阅读您的回答，这是为了您的安全。","fill.hello":"到访 {studio} 之前","fill.intro":"现在填写您的信息和几个健康问题，就不必在前台再输入了。大约需要两分钟。","fill.invalid.body":"链接已损坏或不完整。请让工作室重新发送表单。","fill.invalid.title":"此链接无法使用","fill.language":"语言","fill.lastName":"姓","fill.minor":"您未满 18 岁。需要家长或监护人陪同到场，并在工作室签名。","fill.missing":"请填写标出的项目。","fill.optional":"选填","fill.pageTitle":"{studio} 客户表单","fill.phone":"电话","fill.privacy":"您输入的内容只保留在您的浏览器中。在您亲自发送给工作室之前，不会发送到任何地方，也绝不会经过 Tintaq 或我们的任何服务器。","fill.progress":"第 {n} 步，共 {total} 步","fill.qr.caption":"或者让工作室扫描此二维码。","fill.qr.tooLong":"您的回答太长，无法生成二维码。请使用“发送”。","fill.send":"发送给工作室","fill.sendTitle":"我给 {studio} 的回答","fill.signLater":"签名在工作室完成，待图案和部位确定之后。","fill.start":"开始","fill.step.1":"关于您","fill.step.2":"健康","fill.step.3":"检查并发送","health.answer.no":"否","health.answer.unsure":"不确定","health.answer.yes":"是","health.detail":"请说明详情","health.q.allergies":"您有过敏吗？","health.q.ateToday":"您最近几个小时内吃过东西吗？","health.q.bloodborne":"您是否有需要告知我们的血液传播感染？","health.q.conditions":"您有任何疾病吗？（心脏病、糖尿病、癫痫）","health.q.influence":"您在过去 24 小时内饮酒或使用过药物吗？","health.q.inkReaction":"您是否对墨水、乳胶或消毒剂有过反应？","health.q.medication":"您是否在服用任何药物，包括抗凝血药？","health.q.pregnant":"您是否怀孕或正在哺乳？","health.q.skinCondition":"该部位有皮肤病、痣或疤痕吗？","reply.body":"此链接包含客户发给使用 Tintaq 的工作室的回答。请在安装了 Tintaq 的 iPhone 或 iPad 上打开。","reply.get":"获取 Tintaq","reply.note":"此页面不显示任何内容：只有应用才能读取这些回答。","reply.open":"在 Tintaq 中打开","reply.title":"在 Tintaq 中打开"},"zh-Hant":{"common.back":"返回","common.continue":"繼續","fill.birth":"出生日期","fill.check.title":"檢查您的回答","fill.copied":"連結已複製","fill.copy":"複製連結","fill.done.body":"把它們傳送給 {studio}，或到店時出示下方 QR Code。它們還沒有離開您的手機。","fill.done.title":"您的回答已準備好","fill.edit":"修改我的回答","fill.email":"電子郵件","fill.firstName":"名字","fill.footer":"由 Tintaq 製作，一款適用於刺青與穿孔工作室的 App。","fill.footer.link":"取得 Tintaq","fill.health.intro":"請據實回答。工作室會在開始前閱讀您的回答，這是為了您的安全。","fill.hello":"造訪 {studio} 之前","fill.intro":"現在填寫您的資料和幾個健康問題，就不必在櫃檯再輸入了。大約需要兩分鐘。","fill.invalid.body":"連結已損壞或不完整。請讓工作室重新傳送表單。","fill.invalid.title":"此連結無法使用","fill.language":"語言","fill.lastName":"姓氏","fill.minor":"您未滿 18 歲。需要家長或監護人陪同到場，並在工作室簽名。","fill.missing":"請填寫標示的欄位。","fill.optional":"選填","fill.pageTitle":"{studio} 客戶表單","fill.phone":"電話","fill.privacy":"您輸入的內容只保留在您的瀏覽器中。在您親自傳送給工作室之前，不會傳送到任何地方，也絕不會經過 Tintaq 或我們的任何伺服器。","fill.progress":"第 {n} 步，共 {total} 步","fill.qr.caption":"或者讓工作室掃描此 QR Code。","fill.qr.tooLong":"您的回答太長，無法產生 QR Code。請使用「傳送」。","fill.send":"傳送給工作室","fill.sendTitle":"我給 {studio} 的回答","fill.signLater":"簽名在工作室完成，待圖案與部位確定之後。","fill.start":"開始","fill.step.1":"關於您","fill.step.2":"健康","fill.step.3":"檢查並傳送","health.answer.no":"否","health.answer.unsure":"不確定","health.answer.yes":"是","health.detail":"請說明詳情","health.q.allergies":"您有任何過敏嗎？","health.q.ateToday":"您在最近幾個小時內吃過東西嗎？","health.q.bloodborne":"您是否有需要告知我們的血液傳染疾病？","health.q.conditions":"您有任何疾病嗎？（心臟病、糖尿病、癲癇）","health.q.influence":"您在過去 24 小時內喝過酒或使用過藥物嗎？","health.q.inkReaction":"您是否曾對墨水、乳膠或消毒劑產生反應？","health.q.medication":"您是否正在服用任何藥物，包括抗凝血劑？","health.q.pregnant":"您是否懷孕或正在哺乳？","health.q.skinCondition":"該部位有皮膚疾病、痣或疤痕嗎？","reply.body":"此連結包含客戶傳給使用 Tintaq 的工作室的回答。請在安裝了 Tintaq 的 iPhone 或 iPad 上開啟。","reply.get":"取得 Tintaq","reply.note":"此頁面不顯示任何內容：只有 App 才能讀取這些回答。","reply.open":"在 Tintaq 中開啟","reply.title":"在 Tintaq 中開啟"}};
+(function () {
+  "use strict";
+  var APPSTORE = "https://apps.apple.com/app/id6816622509";
+  var LANGS = [["en", "English"], ["de", "Deutsch"], ["es", "Español"], ["fr", "Français"], ["it", "Italiano"], ["nl", "Nederlands"], ["pl", "Polski"], ["pt-BR", "Português (Brasil)"], ["sv", "Svenska"], ["tr", "Türkçe"], ["ru", "Русский"], ["uk", "Українська"], ["id", "Bahasa Indonesia"], ["th", "ภาษาไทย"], ["vi", "Tiếng Việt"], ["hi", "हिन्दी"], ["ja", "日本語"], ["ko", "한국어"], ["zh-Hans", "简体中文"], ["zh-Hant", "繁體中文"]];
+  // Where the family name comes first on a form.
+  var FAMILY_FIRST = { ja: 1, ko: 1, "zh-Hans": 1, "zh-Hant": 1, vi: 1, hu: 1 };
+
+  var app = document.getElementById("app");
+  var lang = pickLanguage();
+  var request = null;
+  var step = 0;             // 0 welcome, 1 about you, 2 health, 3 review, 4 done
+  var state = { first: "", last: "", birth: "", phone: "", email: "", answers: {}, details: {}, language: lang };
+  var link = "";
+
+  function pickLanguage() {
+    var wanted = (navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || "en"]);
+    for (var i = 0; i < wanted.length; i++) {
+      var tag = String(wanted[i]).toLowerCase();
+      var base = tag.split("-")[0];
+      if (/^zh-(hant|tw|hk|mo)/.test(tag)) return "zh-Hant";
+      if (base === "zh") return "zh-Hans";
+      if (base === "pt") return "pt-BR";
+      if (base === "in") return "id";
+      for (var j = 0; j < LANGS.length; j++) if (LANGS[j][0].toLowerCase() === base) return LANGS[j][0];
+    }
+    return "en";
+  }
+
+  function t(key, vars) {
+    var s = (I18N[lang] && I18N[lang][key]) || I18N.en[key] || key;
+    if (vars) for (var k in vars) s = s.split("{" + k + "}").join(vars[k]);
+    return s;
+  }
+  function esc(s) {
+    return String(s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; });
+  }
+  /* The studio's name, picked out in the accent colour inside a translated sentence. */
+  function tStudio(key) {
+    var raw = (I18N[lang] && I18N[lang][key]) || I18N.en[key] || key;
+    return esc(raw).split("{studio}").join('<span class="studio">' + esc(request.studio) + "</span>");
+  }
+  function studioName() { return request.studio || "Tintaq"; }
+
+  var ICON = {
+    lock: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 018 0v3"/></svg>',
+    pen: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l1-4L17.5 3.5a2.1 2.1 0 013 3L8 19z"/><path d="M14.5 6.5l3 3"/></svg>',
+    alert: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l10 18H2z"/><path d="M12 10v5M12 18.5v.01"/></svg>',
+    tick: '<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>'
+  };
+
+  // ---- Chrome ------------------------------------------------------------------------------
+
+  function shell(inner, current) {
+    var opts = LANGS.map(function (l) { return '<option value="' + l[0] + '"' + (l[0] === lang ? " selected" : "") + ">" + l[1] + "</option>"; }).join("");
+    var bar = "";
+    if (current >= 1 && current <= 3) {
+      bar = '<div class="steps" aria-hidden="true">' + [1, 2, 3].map(function (n) { return '<i class="' + (n <= current ? "on" : "") + '"></i>'; }).join("") + "</div>" +
+        '<p class="stepname">' + esc(t("fill.progress", { n: current, total: 3 })) + " · " + esc(t("fill.step." + current)) + "</p>";
+    }
+    return '<div class="top"><span class="brand">Tintaq<i></i></span>' +
+      '<label class="vh" for="lang">' + esc(t("fill.language")) + "</label>" +
+      '<select class="lang" id="lang" aria-label="' + esc(t("fill.language")) + '">' + opts + "</select></div>" +
+      bar + '<div class="panel">' + inner + "</div>" +
+      "<footer><p>" + esc(t("fill.footer")) + ' <a href="' + APPSTORE + '" rel="noopener noreferrer">' + esc(t("fill.footer.link")) + "</a></p></footer>";
+  }
+
+  function paint(inner, current) {
+    document.documentElement.lang = lang === "zh-Hans" ? "zh-Hans" : lang === "zh-Hant" ? "zh-Hant" : lang;
+    document.title = request ? t("fill.pageTitle", { studio: studioName() }) : "Tintaq";
+    document.body.setAttribute("data-order", FAMILY_FIRST[lang] ? "family" : "");
+    app.innerHTML = shell(inner, current);
+    document.getElementById("lang").addEventListener("change", function (e) {
+      lang = e.target.value; state.language = lang; render(true);
+    });
+  }
+
+  function focusHeading() {
+    var h = app.querySelector("h1,h2");
+    if (h) { h.setAttribute("tabindex", "-1"); try { h.focus({ preventScroll: true }); } catch (e) {} }
+  }
+
+  // ---- Steps -------------------------------------------------------------------------------
+
+  function welcome() {
+    paint(
+      "<h1>" + tStudio("fill.hello") + '</h1><div class="rule"></div>' +
+      '<p class="lead">' + esc(t("fill.intro")) + "</p>" +
+      '<div class="note">' + ICON.lock + "<div>" + esc(t("fill.privacy")) + "</div></div>" +
+      '<div class="note">' + ICON.pen + "<div>" + esc(t("fill.signLater")) + "</div></div>" +
+      '<div class="btns"><button class="btn" id="go">' + esc(t("fill.start")) + "</button></div>", 0);
+    document.getElementById("go").onclick = function () { go(1); };
+  }
+
+  function about() {
+    var age = Intake.ageOn(state.birth);
+    var today = new Date(), max = today.getFullYear() + "-" + String(today.getMonth() + 1).padStart(2, "0") + "-" + String(today.getDate()).padStart(2, "0");
+    paint(
+      "<h2>" + esc(t("fill.step.1")) + "</h2>" +
+      '<div class="note bad" id="miss" hidden>' + ICON.alert + "<div>" + esc(t("fill.missing")) + "</div></div>" +
+      '<div class="row" style="margin-top:18px">' +
+        field("first", t("fill.firstName"), "text", state.first, 'autocomplete="given-name" autocapitalize="words" maxlength="60"', "f1") +
+        field("last", t("fill.lastName"), "text", state.last, 'autocomplete="family-name" autocapitalize="words" maxlength="60"', "f2") +
+      "</div>" +
+      field("birth", t("fill.birth"), "date", state.birth, 'autocomplete="bday" min="1900-01-01" max="' + max + '"') +
+      '<div class="note warn" id="minor"' + (age !== null && age < 18 ? "" : " hidden") + ">" + ICON.alert + "<div>" + esc(t("fill.minor")) + "</div></div>" +
+      field("phone", esc(t("fill.phone")) + " <em>(" + esc(t("fill.optional")) + ")</em>", "tel", state.phone, 'autocomplete="tel" inputmode="tel" maxlength="32"', "", true) +
+      field("email", esc(t("fill.email")) + " <em>(" + esc(t("fill.optional")) + ")</em>", "email", state.email, 'autocomplete="email" inputmode="email" autocapitalize="none" maxlength="100"', "", true) +
+      '<div class="btns two"><button class="btn ghost" id="back">' + esc(t("common.back")) + '</button><button class="btn" id="next">' + esc(t("common.continue")) + "</button></div>", 1);
+
+    ["first", "last", "birth", "phone", "email"].forEach(function (name) {
+      var el = document.getElementById(name);
+      el.addEventListener("input", function () {
+        state[name] = el.value;
+        el.closest(".field").classList.remove("err");
+        if (name === "birth") {
+          var a = Intake.ageOn(el.value);
+          document.getElementById("minor").hidden = !(a !== null && a < 18);
+        }
+      });
+    });
+    document.getElementById("back").onclick = function () { go(0); };
+    document.getElementById("next").onclick = function () {
+      var bad = [];
+      if (!state.first.trim()) bad.push("first");
+      if (!state.last.trim()) bad.push("last");
+      if (Intake.ageOn(state.birth) === null || Intake.ageOn(state.birth) > 120) bad.push("birth");
+      if (state.email.trim() && !/^[^@\s]+@[^@\s]+$/.test(state.email.trim())) bad.push("email");
+      ["first", "last", "birth", "phone", "email"].forEach(function (n) { document.getElementById(n).closest(".field").classList.toggle("err", bad.indexOf(n) >= 0); });
+      document.getElementById("miss").hidden = bad.length === 0;
+      if (bad.length) { document.getElementById(bad[0]).focus(); return; }
+      go(2);
+    };
+  }
+
+  function field(id, label, type, value, attrs, cls, rawLabel) {
+    return '<label class="field ' + (cls || "") + '"><span>' + (rawLabel ? label : esc(label)) + "</span>" +
+      '<input type="' + type + '" id="' + id + '" value="' + esc(value) + '" ' + (attrs || "") + "></label>";
+  }
+
+  function questionText(q) {
+    return q.text || t("health.q." + q.id);
+  }
+
+  function health() {
+    var items = request.questions.map(function (q, i) {
+      var a = state.answers[q.id];
+      var seg = function (val, cls, key) {
+        return '<label class="seg ' + cls + '"><input type="radio" name="q' + i + '" value="' + val + '"' + (a === val ? " checked" : "") + "><span>" + esc(t(key)) + "</span></label>";
+      };
+      var showDetail = a === 1 && q.detail;
+      return '<div class="card q" data-i="' + i + '"><p id="qt' + i + '">' + esc(questionText(q)) + "</p>" +
+        '<div class="segs" role="radiogroup" aria-labelledby="qt' + i + '">' + seg(0, "no", "health.answer.no") + seg(1, "yes", "health.answer.yes") + seg(2, "unsure", "health.answer.unsure") + "</div>" +
+        '<div class="detail field" ' + (showDetail ? "" : "hidden") + '><textarea id="d' + i + '" placeholder="' + esc(t("health.detail")) + '" aria-label="' + esc(t("health.detail")) + '" maxlength="500">' + esc(state.details[q.id] || "") + "</textarea></div></div>";
+    }).join("");
+    paint(
+      "<h2>" + esc(t("fill.step.2")) + "</h2>" +
+      '<p class="mut" style="margin-top:8px">' + esc(t("fill.health.intro")) + "</p>" +
+      '<div class="note bad" id="miss" hidden>' + ICON.alert + "<div>" + esc(t("fill.missing")) + "</div></div>" + items +
+      '<div class="btns two"><button class="btn ghost" id="back">' + esc(t("common.back")) + '</button><button class="btn" id="next">' + esc(t("common.continue")) + "</button></div>", 2);
+
+    request.questions.forEach(function (q, i) {
+      var card = app.querySelector('.q[data-i="' + i + '"]');
+      Array.prototype.forEach.call(card.querySelectorAll('input[type=radio]'), function (r) {
+        r.addEventListener("change", function () {
+          state.answers[q.id] = +r.value;
+          card.classList.remove("err");
+          var detail = card.querySelector(".detail");
+          detail.hidden = !(state.answers[q.id] === 1 && q.detail);
+        });
+      });
+      card.querySelector("textarea").addEventListener("input", function (e) {
+        state.details[q.id] = e.target.value;
+        card.classList.remove("err");
+      });
+    });
+    document.getElementById("back").onclick = function () { go(1); };
+    document.getElementById("next").onclick = function () {
+      var first = null;
+      request.questions.forEach(function (q, i) {
+        var card = app.querySelector('.q[data-i="' + i + '"]');
+        var a = state.answers[q.id];
+        var bad = a === undefined || (a === 1 && q.detail && !(state.details[q.id] || "").trim());
+        card.classList.toggle("err", bad);
+        if (bad && !first) first = card;
+      });
+      document.getElementById("miss").hidden = !first;
+      if (first) { first.scrollIntoView({ block: "center", behavior: "smooth" }); return; }
+      go(3);
+    };
+  }
+
+  function review() {
+    var rows = [["fill.firstName", state.first], ["fill.lastName", state.last], ["fill.birth", state.birth], ["fill.phone", state.phone], ["fill.email", state.email]]
+      .filter(function (r) { return String(r[1]).trim(); })
+      .map(function (r) { return '<div class="k"><dt>' + esc(t(r[0])) + "</dt><dd>" + esc(r[1]) + "</dd></div>"; }).join("");
+    var qs = request.questions.map(function (q) {
+      var a = state.answers[q.id];
+      var key = a === 1 ? "health.answer.yes" : a === 2 ? "health.answer.unsure" : "health.answer.no";
+      var why = (state.details[q.id] || "").trim();
+      return '<div class="hq">' + esc(questionText(q)) + "<b" + (a === 1 ? ' class="yes"' : "") + ">" + esc(t(key)) + "</b>" + (why ? '<span class="why">' + esc(why) + "</span>" : "") + "</div>";
+    }).join("");
+    paint(
+      "<h2>" + esc(t("fill.check.title")) + "</h2>" +
+      '<div class="card sum" style="margin-top:18px"><h3>' + esc(t("fill.step.1")) + '<button id="e1">' + esc(t("fill.edit")) + "</button></h3><dl>" + rows + "</dl></div>" +
+      '<div class="card sum"><h3>' + esc(t("fill.step.2")) + '<button id="e2">' + esc(t("fill.edit")) + "</button></h3>" + qs + "</div>" +
+      '<div class="note">' + ICON.pen + "<div>" + esc(t("fill.signLater")) + "</div></div>" +
+      '<div class="btns two"><button class="btn ghost" id="back">' + esc(t("common.back")) + '</button><button class="btn" id="next">' + esc(t("fill.send")) + "</button></div>", 3);
+    document.getElementById("e1").onclick = function () { go(1); };
+    document.getElementById("e2").onclick = function () { go(2); };
+    document.getElementById("back").onclick = function () { go(2); };
+    document.getElementById("next").onclick = function () { finish(); };
+  }
+
+  /* The answers become a link, and the link becomes a QR code on the client's own screen. */
+  async function finish() {
+    var button = document.getElementById("next");
+    button.disabled = true;
+    state.language = lang;
+    var payload = await Intake.encode(Intake.buildReply(state, request));
+    link = Intake.SITE + "/r/#" + payload;
+    go(4);
+  }
+
+  function qrSvg(text) {
+    var qr = null, levels = ["M", "L"];
+    for (var i = 0; i < levels.length && !qr; i++) {
+      try { var q = qrcode(0, levels[i]); q.addData(text); q.make(); qr = q; } catch (e) { qr = null; }
+    }
+    if (!qr) return "";
+    var n = qr.getModuleCount(), m = 4, d = "";
+    for (var r = 0; r < n; r++) for (var c = 0; c < n; c++) if (qr.isDark(r, c)) d += "M" + (c + m) + " " + (r + m) + "h1v1h-1z";
+    var size = n + 2 * m;
+    return '<svg viewBox="0 0 ' + size + " " + size + '" shape-rendering="crispEdges" role="img" aria-label="QR"><rect width="' + size + '" height="' + size + '" fill="#fff"/><path d="' + d + '" fill="#000"/></svg>';
+  }
+
+  function done() {
+    var svg = qrSvg(link);
+    paint(
+      '<div class="tick" aria-hidden="true">' + ICON.tick + "</div>" +
+      "<h2>" + esc(t("fill.done.title")) + "</h2>" +
+      '<p class="lead" style="margin-top:10px">' + esc(t("fill.done.body", { studio: studioName() })) + "</p>" +
+      '<div class="btns"><button class="btn" id="send">' + esc(t("fill.send")) + '</button><button class="btn ghost" id="copy">' + esc(t("fill.copy")) + "</button></div>" +
+      (svg ? '<div class="qr">' + svg + "<p>" + esc(t("fill.qr.caption")) + "</p></div>"
+           : '<div class="note warn">' + ICON.alert + "<div>" + esc(t("fill.qr.tooLong")) + "</div></div>") +
+      '<div class="btns"><button class="btn ghost" id="edit">' + esc(t("fill.edit")) + "</button></div>", 0);
+    var sendBtn = document.getElementById("send"), copyBtn = document.getElementById("copy");
+    sendBtn.onclick = function () {
+      if (navigator.share) {
+        navigator.share({ title: t("fill.sendTitle", { studio: studioName() }), text: t("fill.sendTitle", { studio: studioName() }), url: link }).catch(function () {});
+      } else copy(copyBtn);
+    };
+    copyBtn.onclick = function () { copy(copyBtn); };
+    document.getElementById("edit").onclick = function () { go(1); };
+  }
+
+  function copy(button) {
+    var ok = function () { var was = button.textContent; button.textContent = t("fill.copied"); setTimeout(function () { button.textContent = t("fill.copy"); }, 2200); };
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(link).then(ok, fallback);
+    else fallback();
+    function fallback() {
+      var ta = document.createElement("textarea"); ta.value = link; ta.style.position = "fixed"; ta.style.opacity = "0";
+      document.body.appendChild(ta); ta.select();
+      try { document.execCommand("copy"); ok(); } catch (e) {}
+      document.body.removeChild(ta);
+    }
+  }
+
+  function invalid() {
+    paint('<h2>' + esc(t("fill.invalid.title")) + '</h2><div class="rule"></div><p class="lead">' + esc(t("fill.invalid.body")) + "</p>", 0);
+  }
+
+  function go(n) { step = n; render(false); }
+
+  function render(keepFocus) {
+    if (!request) return invalid();
+    [welcome, about, health, review, done][step]();
+    if (!keepFocus) { window.scrollTo(0, 0); focusHeading(); }
+  }
+
+  // ---- Start -------------------------------------------------------------------------------
+
+  (async function start() {
+    try {
+      var payload = location.hash.replace(/^#/, "");
+      request = Intake.parseRequest(await Intake.decode(payload));
+    } catch (e) { request = null; }
+    render(true);
+  })();
+})();
+</script>
+</body>
+</html>
